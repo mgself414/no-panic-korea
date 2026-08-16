@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>韓国ATM現金引き出し、パニックゼロマニュアル — 画面そのまま従う | No-Panic Korea</title>
+  <meta name="description" content="Global ATMの見分け方(ロゴステッカー)・コンビニvs銀行手数料表・引き出し画面フロー・DCCの罠(自国通貨選択=隠れた為替損)・手数料の二重構造">
+  <link rel="canonical" href="https://mgself414.github.io/no-panic-korea/ja/atm-withdrawal-guide.html">
+  <link rel="alternate" hreflang="en" href="https://mgself414.github.io/no-panic-korea/atm-withdrawal-guide.html">
+  <link rel="alternate" hreflang="ko" href="https://mgself414.github.io/no-panic-korea/ko/atm-withdrawal-guide.html">
+  <link rel="alternate" hreflang="ja" href="https://mgself414.github.io/no-panic-korea/ja/atm-withdrawal-guide.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://mgself414.github.io/no-panic-korea/zh/atm-withdrawal-guide.html">
+  <link rel="alternate" hreflang="x-default" href="https://mgself414.github.io/no-panic-korea/atm-withdrawal-guide.html">
+  <meta property="og:title" content="韓国ATM現金引き出し、パニックゼロマニュアル — 画面そのまま従う | No-Panic Korea">
+  <meta property="og:description" content="Global ATMの見分け方(ロゴステッカー)・コンビニvs銀行手数料表・引き出し画面フロー・DCCの罠(自国通貨選択=隠れた為替損)・手数料の二重構造">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://mgself414.github.io/no-panic-korea/ja/atm-withdrawal-guide.html">
+  <meta property="og:image" content="https://mgself414.github.io/no-panic-korea/og/atm-withdrawal-guide.png">
+  <link rel="icon" href="../favicon.png">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../ja/index.html"><b>NO-PANIC</b> <span>KOREA</span></a>
+  <nav class="langs"><a href="../atm-withdrawal-guide.html">EN</a><a href="../ko/atm-withdrawal-guide.html">KO</a><a href="../ja/atm-withdrawal-guide.html" class="on">JA</a><a href="../zh/atm-withdrawal-guide.html">ZH</a></nav>
+</header>
+<main class="manual" style="--cat:var(--cat-pay)"><a class="back" href="../ja/index.html">← すべての状況</a><div class="cat-chip">🏧</div><h1>韓国ATM現金引き出し、パニックゼロマニュアル — 画面そのまま従う</h1><nav class="toc"><b>目次</b><ol><a href="#s1">🎯 このマニュアルの読み方 — 表記のルール</a><a href="#s2">① Global ATMの見分け方 — どのATMでも使えるわけではない</a><a href="#s3">② どこにあるか — コンビニ vs 銀行</a><a href="#s4">③ 引き出しマスターフロー — 画面そのまま7ステップ</a><a href="#s5">④ DCC最大の罠 — 「自国通貨で支払いますか?」画面、必ずKRW</a><a href="#s6">⑤ 手数料二重構造 — 画面に出るものと出ないもの</a><a href="#s7">⑥ サバイバル単語10 — 画面に実際に見える文字</a><a href="#s8">⑦ パニックシナリオ3</a><a href="#s9">⑧ プランB — ATMがどうしてもダメなら</a></ol></nav>
+<p>&gt; <strong>副題</strong>: 海外カードで韓国ATMから現金を引き出す完全攻略 — Global ATM見分け方・コンビニ/銀行の場所別手数料・引き出しマスターフロー・DCC最大の罠(<span class="scr">「自国通貨で支払いますか?」</span>画面)・手数料二重構造・サバイバル単語10・カード拒否/飲み込まれ対応</p>
+<p>ISSUE 04 · <a href="../atm-withdrawal-guide.html">#1286</a> · 2026-08-16 · korea-first-timerシリーズ⑰</p>
+<hr>
+<h2 id="s1">🎯 このマニュアルの読み方 — 表記のルール</h2>
+<p>画面表記のルール(角括弧ボタン・かぎ括弧画面・太字動作)は#1270キオスク編がSoTだ。この記事もそのまま従う。</p>
+<ul>
+<li>画面内のボタンは角括弧で表記: <kbd>KRW</kbd></li>
+<li>画面タイトル・案内文はかぎ括弧で表記: <span class="scr">「Select Amount」</span></li>
+<li>手で行う動作は<strong>太字</strong>: 「カードをICチップを上にして<strong>奥まで</strong>挿入」</li>
+</ul>
+<p>&gt; <strong>範囲案内</strong>: この記事はATM機の画面の前で実際に現金を引き出す手順のみを扱う。両替所・カード会社選びなど決済手段全体の見取り図は#435両替・カード・ATM概要、韓国の決済網(VAN/EMV)の仕組みは#527決済ディープダイブ編を先に見ると、この記事がより理解しやすくなる。</p>
+<hr>
+<h2 id="s2">① Global ATMの見分け方 — どのATMでも使えるわけではない</h2>
+<p>韓国のATMはほとんどが国内カード専用だ。海外発行カードが使える機械には別途表示がある。</p>
+<ul>
+<li>まず機械の画面や側面に<strong>Visa・Mastercard・UnionPay・JCBのロゴステッカー</strong>が貼られているか確認する。</li>
+<li><strong><span class="scr">「Global ATM」</span></strong>または<span class="scr">「Foreign Card」</span>という表示が機械に貼られていれば確実だ。</li>
+<li>ロゴステッカーが一つもない機械はカードを入れても拒否される確率が高い — 試す前に別の機械を探すほうが早い。</li>
+</ul>
+<hr>
+<h2 id="s3">② どこにあるか — コンビニ vs 銀行</h2>
+<table><thead><tr>
+<th>場所</th>
+<th>ブランド</th>
+<th>アクセス性</th>
+<th>手数料(目安)</th>
+</tr></thead><tbody>
+<tr>
+<td>コンビニ</td>
+<td>CU・GS25・セブンイレブン</td>
+<td>24時間、どこでも一番見つけやすい</td>
+<td>約3,000~3,600ウォン台</td>
+</tr>
+<tr>
+<td>銀行ATM</td>
+<td>ウリ銀行・KB国民銀行・ハナ銀行・新韓銀行</td>
+<td>営業時間中心、海外カード対応幅が広い</td>
+<td>ウリ銀行約2,000~3,000ウォン台</td>
+</tr>
+</tbody></table>
+<ul>
+<li>急いでいるときはコンビニ、手数料を節約したいなら銀行ATM — ただし銀行ATMは営業時間外だとブースが施錠されアクセスできない支店もある。</li>
+<li>空港・主要駅構内のATMはGlobal ATMの比率が特に高い。</li>
+</ul>
+<hr>
+<h2 id="s4">③ 引き出しマスターフロー — 画面そのまま7ステップ</h2>
+<table><thead><tr>
+<th>ステップ</th>
+<th>画面に表示されるもの</th>
+<th>やること</th>
+<th>落とし穴</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>初期画面</td>
+<td><kbd>Foreign Card</kbd> / <kbd>Overseas Card</kbd> / <kbd>Global Service</kbd> をタッチ</td>
+<td>このボタンを押さずに通常メニューに入るとカード自体が読み取られない</td>
+</tr>
+<tr>
+<td>2</td>
+<td>言語選択</td>
+<td><kbd>English</kbd></td>
+<td>Global ATMは言語選択画面から英語に対応</td>
+</tr>
+<tr>
+<td>3</td>
+<td>カード挿入案内</td>
+<td>カードをICチップを上にして<strong>奥まで挿入</strong></td>
+<td>タップ(コンタクトレス)専用カードは一部機械で認識されないことがある</td>
+</tr>
+<tr>
+<td>4</td>
+<td><span class="scr">「Enter PIN」</span></td>
+<td>暗証番号4桁を入力→<kbd>Enter</kbd></td>
+<td>キーパッドを手や反対の手で<strong>隠しながら</strong>入力</td>
+</tr>
+<tr>
+<td>5</td>
+<td><span class="scr">「Select Amount」</span></td>
+<td>金額をタッチ、または<kbd>Other Amount</kbd>でKRW単位を直接入力</td>
+<td>1回の最大引き出し限度額はカード会社・機械ごとに異なる</td>
+</tr>
+<tr>
+<td>6</td>
+<td><span class="scr">「Confirm Fee / Currency」</span></td>
+<td>手数料・通貨を確認して<kbd>Confirm</kbd></td>
+<td><strong>この画面がこのマニュアルの核心 — 下の④を先に読んでおくこと</strong></td>
+</tr>
+<tr>
+<td>7</td>
+<td><span class="scr">「Dispensing...」</span></td>
+<td>現金→カード→明細票の順に出てくる</td>
+<td>現金だけ取って<strong>カードを置き忘れるミス</strong>が最も多い</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="s5">④ DCC最大の罠 — <span class="scr">「自国通貨で支払いますか?」</span>画面、必ずKRW</h2>
+<p>6のステップ直後、または金額確認画面でこのようなポップアップが出る機械が多い。これがこのマニュアルで最も重要な画面だ。</p>
+<p>```</p>
+<p><span class="scr">「Currency Selection」</span></p>
+<p>Charge in:</p>
+<p>[ USD   $50.00  ]   ← 絶対に押さない</p>
+<p>[ KRW   ₩68,000 ]   ← 必ずこちらを押す</p>
+<p>```</p>
+<ul>
+<li>このポップアップは<strong>DCC(Dynamic Currency Conversion・現地通貨任意換算)</strong>という仕組みだ。USD・EURなど自国通貨で請求されるよう、ATM運営会社が<strong>独自に定めたレート</strong>を適用する。</li>
+<li>自国通貨(USDなど)を選ぶと、カード会社が後で適用する正規レートより不利な<strong>隠れた為替マージン</strong>がその場で上乗せされる。画面上は<span class="scr">「親切に」</span>自国通貨で見せてくれているように見えるが、実際にはより高く引き出される罠だ。</li>
+<li>結論は一つ: <strong>画面にどんな文言が出てもKRW(現地通貨)を選ぶ</strong>こと。為替計算は自分のカード会社に任せるのが常に有利だ。</li>
+</ul>
+<hr>
+<h2 id="s6">⑤ 手数料二重構造 — 画面に出るものと出ないもの</h2>
+<table><thead><tr>
+<th>種類</th>
+<th>画面に表示されるか</th>
+<th>内容</th>
+</tr></thead><tbody>
+<tr>
+<td>ATM引き出し手数料</td>
+<td><strong>表示される</strong> — 6のステップの確認画面に表示</td>
+<td>コンビニ約3,000~3,600ウォン台/銀行(ウリ)約2,000~3,000ウォン台</td>
+</tr>
+<tr>
+<td>自国銀行の海外引き出し手数料</td>
+<td><strong>表示されない</strong> — ATM画面のどこにも出てこない</td>
+<td>カード発行銀行が後で明細書に別途請求。出国前に自国銀行のアプリ・カスタマーセンターで<span class="scr">「海外ATM引き出し手数料」</span>の条件を事前に確認しておけば、帰国後に明細書を見て驚かずに済む</td>
+</tr>
+</tbody></table>
+<p>つまりATM画面で確認した金額がすべてではない — <strong>目に見える手数料+見えない自国銀行の手数料</strong>、二重になっているということだけ覚えておけばいい。</p>
+<hr>
+<h2 id="s7">⑥ サバイバル単語10 — 画面に実際に見える文字</h2>
+<table class="survival"><thead><tr>
+<th>画面の英語/韓国語</th>
+<th>読み方(ローマ字)</th>
+<th>意味</th>
+</tr></thead><tbody>
+<tr>
+<td>引き出し (출금) <button class="sm" type="button" data-ko="출금" data-sub="引き出し (출금)" aria-label="Show fullscreen">📢</button></td>
+<td>chulgeum</td>
+<td>Withdrawal — このボタンを押すとスタート</td>
+</tr>
+<tr>
+<td>残高照会 (잔액조회) <button class="sm" type="button" data-ko="잔액조회" data-sub="残高照会 (잔액조회)" aria-label="Show fullscreen">📢</button></td>
+<td>jan-aek johoe</td>
+<td>Balance Inquiry — 残高確認(引き出しと間違えないように)</td>
+</tr>
+<tr>
+<td>手数料 (수수료) <button class="sm" type="button" data-ko="수수료" data-sub="手数料 (수수료)" aria-label="Show fullscreen">📢</button></td>
+<td>susu-ryo</td>
+<td>Fee — 6のステップの確認画面の核心ワード</td>
+</tr>
+<tr>
+<td>確認 (확인) <button class="sm" type="button" data-ko="확인" data-sub="確認 (확인)" aria-label="Show fullscreen">📢</button></td>
+<td>hwagin</td>
+<td><strong>Confirm — 次へ進む</strong></td>
+</tr>
+<tr>
+<td>取消 (취소) <button class="sm" type="button" data-ko="취소" data-sub="取消 (취소)" aria-label="Show fullscreen">📢</button></td>
+<td>chwiso</td>
+<td><strong>Cancel — 押し間違えたときに全体を取り消す</strong></td>
+</tr>
+<tr>
+<td>暗証番号 (비밀번호) <button class="sm" type="button" data-ko="비밀번호" data-sub="暗証番号 (비밀번호)" aria-label="Show fullscreen">📢</button></td>
+<td>bimil beonho</td>
+<td>PIN — カードの暗証番号4桁</td>
+</tr>
+<tr>
+<td>金額入力 (금액입력) <button class="sm" type="button" data-ko="금액입력" data-sub="金額入力 (금액입력)" aria-label="Show fullscreen">📢</button></td>
+<td>geumaek ipryeok</td>
+<td>Enter Amount — 引き出す金額を直接入力</td>
+</tr>
+<tr>
+<td>明細票 (명세표) <button class="sm" type="button" data-ko="명세표" data-sub="明細票 (명세표)" aria-label="Show fullscreen">📢</button></td>
+<td>myeongsepyo</td>
+<td>Receipt — 手数料・為替レートが記録される</td>
+</tr>
+<tr>
+<td>カード受取 (카드받기) <button class="sm" type="button" data-ko="카드받기" data-sub="カード受取 (카드받기)" aria-label="Show fullscreen">📢</button></td>
+<td>kadeu batgi</td>
+<td><strong>Take Card — カードの回収、絶対に忘れないこと</strong></td>
+</tr>
+<tr>
+<td>取引中断 (거래중단) <button class="sm" type="button" data-ko="거래중단" data-sub="取引中断 (거래중단)" aria-label="Show fullscreen">📢</button></td>
+<td>georae jungdan</td>
+<td>Transaction Cancelled — 取引が中断されたという意味、もう一度試す</td>
+</tr>
+</tbody></table>
+<p>&gt; ヒント: 10個全部覚える必要はない。<strong><code>Confirm</code>(進む)・<code>Cancel</code>(抜ける)・<code>Take Card</code>(カード回収)</strong>の3つだけ押さえれば実践で迷わない。</p>
+<hr>
+<h2 id="s8">⑦ パニックシナリオ3</h2>
+<p>1. <strong>カードが拒否された</strong> — ロゴステッカーがある機械だったのに拒否された場合、カードの問題ではなく、その機械・銀行網との相性の問題である可能性が高い。<strong>別の銀行のATM</strong>(できれば別ブランド)へ移動して再試行する。</p>
+<p>2. <strong>カードが機械に飲み込まれた</strong> — その場で無理に引き抜こうとしない。銀行ATMならブースに貼られた<strong>銀行の営業時間内カスタマーセンター番号</strong>に電話して回収手続きを確認する。コンビニATMなら画面のカスタマーセンター案内(たいていATM運営会社のコールセンター)に従う。</p>
+<p>3. <strong>限度額超過で引き出せない</strong> — 1回の引き出し限度額(機械自体)、またはカード会社が設定した海外引き出し限度額、どちらかに引っかかっている。金額を下げて再試行するか、1日おいて別の機械で改めて試す。</p>
+<hr>
+<h2 id="s9">⑧ プランB — ATMがどうしてもダメなら</h2>
+<ul>
+<li><strong>WOWPASS</strong>: 外国人専用プリペイドカード。空港・主要駅の発行機でパスポートを使い即時発行、現金チャージ後は国内カードのように使える — ATM引き出し自体が不安ならこちらが代案だ。</li>
+<li><strong>両替所</strong>: 明洞などの民間両替所は為替レートがATMより有利な場合もある。両方式の比較と選択基準は#435両替・カード・ATM概要で扱う。</li>
+</ul>
+<hr>
+<h2 id="s10">🔗 Related</h2>
+<ul>
+<li><strong>決済手段全体の見取り図</strong>: <a href="https://mgself414.github.io/keychingu-content-deploy/content/exchange-card-atm.ja.html">#435</a> 韓国の両替・カード・ATM概要 — DCC・WOWPASSの詳細比較はこちら</li>
+<li><strong>決済ディープダイブ</strong>: <a href="https://mgself414.github.io/keychingu-content-deploy/content/payment-system-deep.ja.html">#527</a> 韓国の決済システムdeep dive — カードが拒否されるVAN/EMVの仕組み</li>
+<li><strong>同シリーズ</strong>: <a href="../tipping-paying-guide.html">#1275</a> 韓国のチップ・会計マナーガイド — ATMで引き出した現金を使う次のステップ</li>
+<li><strong>korea-first-timerシリーズ</strong>: <a href="../restaurant-kiosk-guide.html">#1270</a> キオスク注文ガイド(表記ルールのSoT)</li>
+</ul>
+<hr></main>
+<dialog id="showme"><div class="sm-ko"></div><div class="sm-sub"></div></dialog>
+<script src="../assets/showme.js" defer></script>
+<footer class="foot">
+  <p><b>NO-PANIC</b> <span class="brand-k">KOREA</span> — Korea, screen by screen.</p>
+  <p class="powered">コンテンツ提供 <a href="https://mgself414.github.io/keychingu-content-deploy/" rel="noopener">KeyChinGu</a></p>
+</footer>
+</body>
+</html>

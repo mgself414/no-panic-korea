@@ -15,7 +15,8 @@
   <meta property="og:description" content="키오스크 3유형 구분 · 공통 6단계 화면 플로우 · 한국어-only 화면 생존 단어 15 · 해외카드 거절 대응 · 맥도날드/롯데리아/메가커피 실전 워크스루">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://mgself414.github.io/no-panic-korea/ko/restaurant-kiosk-guide.html">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>">
+  <meta property="og:image" content="https://mgself414.github.io/no-panic-korea/og/restaurant-kiosk-guide.png">
+  <link rel="icon" href="../favicon.png">
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
@@ -132,77 +133,77 @@
 <th>뜻 = 해야 할 것</th>
 </tr></thead><tbody>
 <tr>
-<td>매장</td>
+<td>매장 <button class="sm" type="button" data-ko="매장" data-sub="매장" aria-label="Show fullscreen">📢</button></td>
 <td>maejang</td>
 <td>Eat in — 먹고 갈 때</td>
 </tr>
 <tr>
-<td>포장</td>
+<td>포장 <button class="sm" type="button" data-ko="포장" data-sub="포장" aria-label="Show fullscreen">📢</button></td>
 <td>pojang</td>
 <td>Takeout — 가져갈 때</td>
 </tr>
 <tr>
-<td>담기</td>
+<td>담기 <button class="sm" type="button" data-ko="담기" data-sub="담기" aria-label="Show fullscreen">📢</button></td>
 <td>damgi</td>
 <td>Add to cart</td>
 </tr>
 <tr>
-<td>장바구니</td>
+<td>장바구니 <button class="sm" type="button" data-ko="장바구니" data-sub="장바구니" aria-label="Show fullscreen">📢</button></td>
 <td>jangbaguni</td>
 <td>Cart — 담은 목록</td>
 </tr>
 <tr>
-<td>단품</td>
+<td>단품 <button class="sm" type="button" data-ko="단품" data-sub="단품" aria-label="Show fullscreen">📢</button></td>
 <td>danpum</td>
 <td>Item only (세트 아님)</td>
 </tr>
 <tr>
-<td>세트</td>
+<td>세트 <button class="sm" type="button" data-ko="세트" data-sub="세트" aria-label="Show fullscreen">📢</button></td>
 <td>seteu</td>
 <td>Combo/set</td>
 </tr>
 <tr>
-<td>옵션</td>
+<td>옵션 <button class="sm" type="button" data-ko="옵션" data-sub="옵션" aria-label="Show fullscreen">📢</button></td>
 <td>opsyeon</td>
 <td>Options 팝업</td>
 </tr>
 <tr>
-<td>선택 완료</td>
+<td>선택 완료 <button class="sm" type="button" data-ko="선택 완료" data-sub="선택 완료" aria-label="Show fullscreen">📢</button></td>
 <td>seontaek wallyo</td>
 <td>Done/Confirm — 팝업 닫기</td>
 </tr>
 <tr>
-<td>결제하기</td>
+<td>결제하기 <button class="sm" type="button" data-ko="결제하기" data-sub="결제하기" aria-label="Show fullscreen">📢</button></td>
 <td>gyeoljehagi</td>
 <td><strong>Pay — 가장 중요한 버튼</strong></td>
 </tr>
 <tr>
-<td>적립</td>
+<td>적립 <button class="sm" type="button" data-ko="적립" data-sub="적립" aria-label="Show fullscreen">📢</button></td>
 <td>jeongnip</td>
 <td>Points — 관광객은 무관</td>
 </tr>
 <tr>
-<td>건너뛰기</td>
+<td>건너뛰기 <button class="sm" type="button" data-ko="건너뛰기" data-sub="건너뛰기" aria-label="Show fullscreen">📢</button></td>
 <td>geonneottwigi</td>
 <td><strong>Skip — 적립 화면 탈출</strong></td>
 </tr>
 <tr>
-<td>품절</td>
+<td>품절 <button class="sm" type="button" data-ko="품절" data-sub="품절" aria-label="Show fullscreen">📢</button></td>
 <td>pumjeol</td>
 <td>Sold out — 회색 처리된 메뉴</td>
 </tr>
 <tr>
-<td>영수증</td>
+<td>영수증 <button class="sm" type="button" data-ko="영수증" data-sub="영수증" aria-label="Show fullscreen">📢</button></td>
 <td>yeongsujeung</td>
 <td>Receipt — 번호표 겸용</td>
 </tr>
 <tr>
-<td>처음으로</td>
+<td>처음으로 <button class="sm" type="button" data-ko="처음으로" data-sub="처음으로" aria-label="Show fullscreen">📢</button></td>
 <td>cheoeumeuro</td>
 <td><strong>Start over — 잘못 눌렀을 때 리셋</strong></td>
 </tr>
 <tr>
-<td>호출</td>
+<td>호출 <button class="sm" type="button" data-ko="호출" data-sub="호출" aria-label="Show fullscreen">📢</button></td>
 <td>hochul</td>
 <td>Call staff — 직원 부르기</td>
 </tr>
@@ -288,6 +289,8 @@
 <li><strong>VisitKorea</strong>: https://english.visitkorea.or.kr/</li>
 <li><strong>Seoul Tourism</strong>: https://english.visitseoul.net/</li>
 </ul></main>
+<dialog id="showme"><div class="sm-ko"></div><div class="sm-sub"></div></dialog>
+<script src="../assets/showme.js" defer></script>
 <footer class="foot">
   <p><b>NO-PANIC</b> <span class="brand-k">KOREA</span> — Korea, screen by screen.</p>
   <p class="powered">콘텐츠 제공 <a href="https://mgself414.github.io/keychingu-content-deploy/" rel="noopener">KeyChinGu</a></p>

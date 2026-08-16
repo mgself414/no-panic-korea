@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>韓国タルンイ公共自転車、パニックゼロマニュアル — 画面通りに実践 | No-Panic Korea</title>
+  <meta name="description" content="アプリ設定(foreigner=英語モード)・利用券(1時間1,000ウォン~)・QRレンタル(位置情報・Bluetooth ON)・返却レバー+通知確認(最大の罠)・QR失敗3原因・漢江ライド">
+  <link rel="canonical" href="https://mgself414.github.io/no-panic-korea/ja/ddareungi-guide.html">
+  <link rel="alternate" hreflang="en" href="https://mgself414.github.io/no-panic-korea/ddareungi-guide.html">
+  <link rel="alternate" hreflang="ko" href="https://mgself414.github.io/no-panic-korea/ko/ddareungi-guide.html">
+  <link rel="alternate" hreflang="ja" href="https://mgself414.github.io/no-panic-korea/ja/ddareungi-guide.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://mgself414.github.io/no-panic-korea/zh/ddareungi-guide.html">
+  <link rel="alternate" hreflang="x-default" href="https://mgself414.github.io/no-panic-korea/ddareungi-guide.html">
+  <meta property="og:title" content="韓国タルンイ公共自転車、パニックゼロマニュアル — 画面通りに実践 | No-Panic Korea">
+  <meta property="og:description" content="アプリ設定(foreigner=英語モード)・利用券(1時間1,000ウォン~)・QRレンタル(位置情報・Bluetooth ON)・返却レバー+通知確認(最大の罠)・QR失敗3原因・漢江ライド">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://mgself414.github.io/no-panic-korea/ja/ddareungi-guide.html">
+  <meta property="og:image" content="https://mgself414.github.io/no-panic-korea/og/ddareungi-guide.png">
+  <link rel="icon" href="../favicon.png">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../ja/index.html"><b>NO-PANIC</b> <span>KOREA</span></a>
+  <nav class="langs"><a href="../ddareungi-guide.html">EN</a><a href="../ko/ddareungi-guide.html">KO</a><a href="../ja/ddareungi-guide.html" class="on">JA</a><a href="../zh/ddareungi-guide.html">ZH</a></nav>
+</header>
+<main class="manual" style="--cat:var(--cat-move)"><a class="back" href="../ja/index.html">← すべての状況</a><div class="cat-chip">🚲</div><h1>韓国タルンイ公共自転車、パニックゼロマニュアル — 画面通りに実践</h1><nav class="toc"><b>目次</b><ol><a href="#s1">🎯 このマニュアルの読み方 — 画面表記のルール</a><a href="#s2">① タルンイ (따릉이) とは — ソウルのどこでも借りて、どの貸出所でも返却</a><a href="#s3">② アプリセットアップ — インストールから利用券購入まで</a><a href="#s4">③ 貸出マスターフロー — 自転車の前でこの順序</a><a href="#s5">④ 返却マスターフロー — 本当の落とし穴はここ</a><a href="#s6">⑤ QRスキャンができないとき — 原因はたった3つ</a><a href="#s7">⑥ サバイバル単語10 — 貸出所・ドッキングラックで見かける韓国語</a><a href="#s8">⑦ 自転車道の基本ルール + 漢江ライディング連携</a><a href="#s9">⑧ パニックシナリオ3</a><a href="#s10">⑨ プランB — それでもダメなら</a></ol></nav>
+<p>&gt; <strong>副題</strong>: ソウル公共自転車タルンイ完全攻略 — アプリセットアップ→貸出→返却の実践手順・QRスキャン失敗の3原因・<span class="scr">「返却したのに課金が続く」</span>本当の落とし穴・漢江 (한강) ライディング連携動線</p>
+<p>ISSUE 04 · <a href="../ddareungi-guide.html">#1294</a> · 2026-08-16 · korea-first-timerシリーズ㉕</p>
+<hr>
+<h2 id="s1">🎯 このマニュアルの読み方 — 画面表記のルール</h2>
+<p><code><a href="../restaurant-kiosk-guide.html">#1270</a> キオスク編</code>と同じ表記を使う。<span class="scr">「何をすべきか」</span>ではなく、<strong><span class="scr">「画面に何が表示され、どのボタンを、どんな順序で押すのか」</span></strong>をそのまま書く。</p>
+<ul>
+<li>画面上のボタンは角括弧で表記: <kbd>Rent</kbd></li>
+<li>画面タイトル・案内文はかぎ括弧で表記: <span class="scr">「返却完了 (반납 완료)」</span></li>
+<li>手で行う動作は<strong>太字</strong>: 「ロックレバーを<strong>最後まで</strong>下げる」</li>
+</ul>
+<hr>
+<h2 id="s2">① タルンイ (따릉이) とは — ソウルのどこでも借りて、どの貸出所でも返却</h2>
+<p>タルンイはソウル市の公共自転車だ。地下鉄駅・公園・主要な通りごとに無人貸出所 (대여소、通称 거치대) があり、<strong>借りた場所と返す場所が違ってもかまわない</strong> — 市内のどこで乗っても、近くのどの貸出所に停めれば終わりだ。レンタカーのように<span class="scr">「借りた場所に戻さなければならない」</span>負担がないため、短距離移動ならタクシーやバスよりむしろ速いことも多い。</p>
+<p>ただ、この利便性ゆえに返却手順を軽く見てしまいがちで — それが④で扱う本当の落とし穴だ。</p>
+<hr>
+<h2 id="s3">② アプリセットアップ — インストールから利用券購入まで</h2>
+<p>1. アプリストアで<strong>タルンイ (Seoul Bike)</strong>を検索・インストール</p>
+<p>2. 初回起動時の言語選択で <kbd>Foreigner</kbd> (外国人) を選択 → 自動的に<strong>英語モード</strong>に切り替わる。この一度の選択で、以降すべての画面が英語になる。</p>
+<p>3. 利用券 (이용권) の購入 — 必要な分だけ買えばいい</p>
+<table><thead><tr>
+<th>利用券</th>
+<th>料金</th>
+</tr></thead><tbody>
+<tr>
+<td>1時間券</td>
+<td>1,000ウォン</td>
+</tr>
+<tr>
+<td>2時間券</td>
+<td>2,000ウォン</td>
+</tr>
+<tr>
+<td>終日券(1日券)</td>
+<td>5,000ウォン</td>
+</tr>
+</tbody></table>
+<p>4. 決済: <strong>海外カード(Visa・Mastercard・JCB)登録可能</strong> — アプリ内でそのままカード情報を入力</p>
+<p>&gt; ここまでが宿泊先で先に済ませておく部分だ。自転車の前に立つ前にアプリのインストール・言語切替・利用券購入を済ませておけば、③からは数秒で終わる。</p>
+<hr>
+<h2 id="s4">③ 貸出マスターフロー — 自転車の前でこの順序</h2>
+<table><thead><tr>
+<th>手順</th>
+<th>すること</th>
+<th>落とし穴</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>アプリ下部の <kbd>Rent</kbd> タブを選択</td>
+<td>利用券を買っていないとここで止まる — ②を先に終えておくこと</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>自転車の後輪上にある端末のQRコード</strong>にスマートフォンのカメラを合わせてスキャン</td>
+<td>スキャン前に<strong>位置情報(GPS)・Bluetoothが必ずON</strong>になっている必要がある — オフだとスキャン自体が反応しない</td>
+</tr>
+<tr>
+<td>3</td>
+<td>スキャン成功 → <span class="scr">「カチャッ」</span>という<strong>音とともにロック解除</strong></td>
+<td>音がしなければまだロックされたままだ。自転車を無理に引き抜かず再スキャンする</td>
+</tr>
+</tbody></table>
+<p><span class="scr">「カチャッ」</span>という音を聞いたら、その自転車はもう自分のものだ。サドルの高さだけ確認して出発。</p>
+<hr>
+<h2 id="s5">④ 返却マスターフロー — 本当の落とし穴はここ</h2>
+<p>貸出よりも返却でのミスの方がはるかに多い。<strong>レバーを下げただけで確認せずに立ち去る</strong>のが最も多いミスだ。</p>
+<table><thead><tr>
+<th>手順</th>
+<th>すること</th>
+<th>落とし穴</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>どの貸出所のドッキングラックにでも自転車を押し込む</td>
+<td>特定の貸出所に戻る必要はない (①)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>ロックレバーを手で最後まで下げる</strong></td>
+<td>半分しか下げないとロックされていない扱いになることがある</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>アプリのプッシュ通知またはカカオトーク (카카오톡) の通知で<span class="scr">「返却完了 (반납 완료)」</span>を確認</strong></td>
+<td>★★ <strong>ここが最大の落とし穴</strong> — レバーを下げても、アプリ・カカオトークの通知で返却完了を確認しなければ、システム上は貸出中のままとなり<strong>課金が続く</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td>通知が来なければ、アプリの利用履歴(現在利用中の自転車)を直接開いて状態を再確認</td>
+<td>貸出中と表示されていればレバーをもう一度押してみて、それでも変わらなければ⑨プランBへ</td>
+</tr>
+</tbody></table>
+<p><strong>レバーを下げただけでは終わりではない。通知を確認して初めて終わりだ。</strong> この一文がこのマニュアルで一番重要な文章だ。</p>
+<hr>
+<h2 id="s6">⑤ QRスキャンができないとき — 原因はたった3つ</h2>
+<table><thead><tr>
+<th>原因</th>
+<th>確認方法</th>
+<th>解決策</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>位置情報(GPS)がOFF</strong></td>
+<td>スマホの設定で位置情報サービスの状態を確認</td>
+<td>オンにして再スキャン</td>
+</tr>
+<tr>
+<td><strong>Bluetooth がOFF</strong></td>
+<td>スマホ上部のコントロールセンターで確認</td>
+<td>オンにして再スキャン</td>
+</tr>
+<tr>
+<td><strong>端末自体の不具合</strong>(バッテリー切れなど)</td>
+<td>上の2つをオンにしても失敗し続ける</td>
+<td>その自転車は諦めて<strong>すぐ隣の自転車に移って再試行</strong></td>
+</tr>
+</tbody></table>
+<p>3つを順番に確認するだけで、ほとんどの場合30秒以内に解決する。</p>
+<hr>
+<h2 id="s7">⑥ サバイバル単語10 — 貸出所・ドッキングラックで見かける韓国語</h2>
+<p>アプリを英語モードに切り替えても、ドッキングラックの標識や案内文は韓国語のままのことがある。以下の10個だけ覚えておけば十分だ。</p>
+<table class="survival"><thead><tr>
+<th>画面・標識の韓国語</th>
+<th>読み方</th>
+<th>意味</th>
+</tr></thead><tbody>
+<tr>
+<td>貸出所 (대여소) <button class="sm" type="button" data-ko="대여소" data-sub="貸出所 (대여소)" aria-label="Show fullscreen">📢</button></td>
+<td>daeyeoso</td>
+<td>Rental station</td>
+</tr>
+<tr>
+<td>ドッキングラック (거치대) <button class="sm" type="button" data-ko="거치대" data-sub="ドッキングラック (거치대)" aria-label="Show fullscreen">📢</button></td>
+<td>georichidae</td>
+<td>Docking rack</td>
+</tr>
+<tr>
+<td>利用券 (이용권) <button class="sm" type="button" data-ko="이용권" data-sub="利用券 (이용권)" aria-label="Show fullscreen">📢</button></td>
+<td>iyongkwon</td>
+<td>Pass/ticket</td>
+</tr>
+<tr>
+<td>貸出 (대여) <button class="sm" type="button" data-ko="대여" data-sub="貸出 (대여)" aria-label="Show fullscreen">📢</button></td>
+<td>daeyeo</td>
+<td>Rent</td>
+</tr>
+<tr>
+<td>返却 (반납) <button class="sm" type="button" data-ko="반납" data-sub="返却 (반납)" aria-label="Show fullscreen">📢</button></td>
+<td>bannap</td>
+<td>Return</td>
+</tr>
+<tr>
+<td>ロック (잠금) <button class="sm" type="button" data-ko="잠금" data-sub="ロック (잠금)" aria-label="Show fullscreen">📢</button></td>
+<td>jamgeum</td>
+<td>Lock</td>
+</tr>
+<tr>
+<td>解除 (해제) <button class="sm" type="button" data-ko="해제" data-sub="解除 (해제)" aria-label="Show fullscreen">📢</button></td>
+<td>haeje</td>
+<td>Unlock</td>
+</tr>
+<tr>
+<td>定期券 (정기권) <button class="sm" type="button" data-ko="정기권" data-sub="定期券 (정기권)" aria-label="Show fullscreen">📢</button></td>
+<td>jeonggikwon</td>
+<td>Season pass</td>
+</tr>
+<tr>
+<td>自転車道 (자전거도로) <button class="sm" type="button" data-ko="자전거도로" data-sub="自転車道 (자전거도로)" aria-label="Show fullscreen">📢</button></td>
+<td>jajeongeo-doro</td>
+<td>Bike lane</td>
+</tr>
+<tr>
+<td>満車 (만차) <button class="sm" type="button" data-ko="만차" data-sub="満車 (만차)" aria-label="Show fullscreen">📢</button></td>
+<td>mancha</td>
+<td>Full/no space(ドッキングラックの満車表示)</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="s8">⑦ 自転車道の基本ルール + 漢江ライディング連携</h2>
+<p>市内の道路は<strong>車道脇の自転車道(緑色の舗装)</strong>を利用し、それがない区間では歩道ではなく車道の端を走行するのが原則だ。歩行者優先 — 自転車道が歩道と重なる区間では徐行し、ベル(または声)で知らせる。信号は自動車と同じように適用される。</p>
+<p>短距離移動を超えてしっかりライディングを楽しみたいなら<strong>漢江公園 (한강공원)</strong>が正解だ。漢江の両岸に沿って専用自転車道が長く続いていて、汝矣島 (여의도)・盤浦 (반포)・ットゥクソム (뚝섬) など主要な漢江公園の入口付近にタルンイの貸出所が密集している — 市内で乗った自転車を漢江の貸出所で返却し、必要ならまた借りて川沿いだけ別に乗るというふうに動線を分けてもいい。</p>
+<hr>
+<h2 id="s9">⑧ パニックシナリオ3</h2>
+<p>1. <strong>確かに返却したのに課金の通知がない</strong> — 慌てず④の3番目に戻り、アプリの<span class="scr">「現在利用中」</span>リストを直接開いてみる。貸出中と表示されていればレバーをもう一度押して再試行する。</p>
+<p>2. <strong>QRが読み取れない</strong> — ⑤の順序(位置情報→Bluetooth→隣の自転車)通りにやればほとんど解決する。焦る必要はない。</p>
+<p>3. <strong>貸出所が満車で返却する場所がない</strong> — 無理に押し込まず、アプリの地図で一番近い別の貸出所を確認して移動する。徒歩5分圏内に空いている貸出所があることがほとんどだ。</p>
+<hr>
+<h2 id="s10">⑨ プランB — それでもダメなら</h2>
+<ul>
+<li><strong>別の貸出所に移動</strong>: アプリの地図がリアルタイムでドッキングラックの空き状況を表示してくれる。満車・故障中の自転車は別の貸出所で迂回</li>
+<li><strong>カスタマーセンターに問い合わせ</strong>: アプリ内のカスタマーセンター(お問い合わせ)メニューから返却未確認・課金エラーを報告 — スクリーンショット(時間・場所)を残しておくと対応が早い</li>
+<li><strong>自転車自体の不具合ならその場に置いて報告</strong>: 無理に乗らず、アプリで故障報告をしてから別の自転車を利用</li>
+</ul>
+<hr>
+<h2 id="s11">🔗 Related</h2>
+<ul>
+<li><strong>korea-first-timerシリーズ</strong>: <a href="../city-bus-guide.html">#1271</a> 市内バスの乗り方・<a href="../subway-first-ride-guide.html">#1281</a> 地下鉄利用手順</li>
+<li><strong>到着直後セット</strong>: <a href="https://mgself414.github.io/keychingu-content-deploy/content/korea-essential-apps.ja.html">#1230</a> 必須アプリ12 — タルンイのアプリインストールもこのリストに含まれる</li>
+<li><strong>同じ都市内移動系統</strong>: (予定) KakaoTタクシー・出前アプリ実践</li>
+</ul>
+<hr>
+<h2 id="s12">🌐 EXTERNAL SOURCES</h2>
+<ul>
+<li><strong>Seoul Bike (タルンイ公式)</strong>: https://www.bikeseoul.com/</li>
+<li><strong>VisitKorea</strong>: https://english.visitkorea.or.kr/</li>
+<li><strong>Seoul Tourism</strong>: https://english.visitseoul.net/</li>
+</ul></main>
+<dialog id="showme"><div class="sm-ko"></div><div class="sm-sub"></div></dialog>
+<script src="../assets/showme.js" defer></script>
+<footer class="foot">
+  <p><b>NO-PANIC</b> <span class="brand-k">KOREA</span> — Korea, screen by screen.</p>
+  <p class="powered">コンテンツ提供 <a href="https://mgself414.github.io/keychingu-content-deploy/" rel="noopener">KeyChinGu</a></p>
+</footer>
+</body>
+</html>

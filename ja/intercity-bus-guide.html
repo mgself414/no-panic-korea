@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>韓国高速・市外バスターミナル、マニュアルそのまま — アプリからして全く違うということ | No-Panic Korea</title>
+  <meta name="description" content="高速vs市外の区別表(アプリ完全分離 — kobus/Tマネー vs Bustago/TxBus)・座席等級・予約4ルート+Klook QR迂回・券売機フロー・乗り場電光掲示板・荷物室">
+  <link rel="canonical" href="https://mgself414.github.io/no-panic-korea/ja/intercity-bus-guide.html">
+  <link rel="alternate" hreflang="en" href="https://mgself414.github.io/no-panic-korea/intercity-bus-guide.html">
+  <link rel="alternate" hreflang="ko" href="https://mgself414.github.io/no-panic-korea/ko/intercity-bus-guide.html">
+  <link rel="alternate" hreflang="ja" href="https://mgself414.github.io/no-panic-korea/ja/intercity-bus-guide.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://mgself414.github.io/no-panic-korea/zh/intercity-bus-guide.html">
+  <link rel="alternate" hreflang="x-default" href="https://mgself414.github.io/no-panic-korea/intercity-bus-guide.html">
+  <meta property="og:title" content="韓国高速・市外バスターミナル、マニュアルそのまま — アプリからして全く違うということ | No-Panic Korea">
+  <meta property="og:description" content="高速vs市外の区別表(アプリ完全分離 — kobus/Tマネー vs Bustago/TxBus)・座席等級・予約4ルート+Klook QR迂回・券売機フロー・乗り場電光掲示板・荷物室">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://mgself414.github.io/no-panic-korea/ja/intercity-bus-guide.html">
+  <meta property="og:image" content="https://mgself414.github.io/no-panic-korea/og/intercity-bus-guide.png">
+  <link rel="icon" href="../favicon.png">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../ja/index.html"><b>NO-PANIC</b> <span>KOREA</span></a>
+  <nav class="langs"><a href="../intercity-bus-guide.html">EN</a><a href="../ko/intercity-bus-guide.html">KO</a><a href="../ja/intercity-bus-guide.html" class="on">JA</a><a href="../zh/intercity-bus-guide.html">ZH</a></nav>
+</header>
+<main class="manual" style="--cat:var(--cat-move)"><a class="back" href="../ja/index.html">← すべての状況</a><div class="cat-chip">🚐</div><h1>韓国高速・市外バスターミナル、マニュアルそのまま — アプリからして全く違うということ</h1><nav class="toc"><b>目次</b><ol><a href="#s1">🎯 この記事の読み方 — 画面表記のルール</a><a href="#s2">① 高速 vs 市外 — 最大の落とし穴は「アプリがまったく違う」こと</a><a href="#s3">② 予約4ルート — どこで、どうやって買うか</a><a href="#s4">③ 発券機の画面フロー — 画面そのまま</a><a href="#s5">④ ターミナル現地フロー — 切符を持ってバスに座るまで</a><a href="#s6">⑤ オンラインで予約したのに、なぜ窓口でまた切符を発券するのか</a><a href="#s7">⑥ サバイバル単語10</a><a href="#s8">⑦ パニックシナリオ3</a><a href="#s9">⑧ プランB — それでも行き詰まったら</a></ol></nav>
+<p>&gt; <strong>副題</strong>: 高速 vs 市外の区分表(アプリが完全に分離 — 最大の混乱ポイント)・座席3等級(一般・優等・プレミアム)・予約4ルート(公式サイトEN/JA/ZH・アプリ・窓口・発券機 + 海外カード決済失敗時のKlook QR迂回)・発券機の画面フロー・ターミナル現地手順(乗車ホーム探し・荷物置き場)・サバイバル単語10・パニックシナリオ3</p>
+<p>ISSUE 04 · <a href="../intercity-bus-guide.html">#1297</a> · 2026-08-16 · korea-first-timerシリーズ㉘</p>
+<hr>
+<h2 id="s1">🎯 この記事の読み方 — 画面表記のルール</h2>
+<p>画面表記のルールは#1270で定めたものをそのまま使う。</p>
+<ul>
+<li>画面上のボタンは角括弧: <kbd>決済する (결제하기)</kbd></li>
+<li>画面タイトル・案内文はかぎ括弧: <span class="scr">「目的地検索 (목적지 검색)」</span></li>
+<li>手で行う動作は<strong>太字</strong>: 切符を運転手に<strong>直接</strong>提示</li>
+</ul>
+<p>この記事はKTXが届かない中小都市へ行くとき — つまり<a href="../ktx-first-ride-guide.html">#1287</a>(KTX)と対になる回だ。交通手段全体の比較・料金概要は#239を先に見よう。ここでは予約画面からバスに乗るまでだけを扱う。</p>
+<hr>
+<h2 id="s2">① 高速 vs 市外 — 最大の落とし穴は<span class="scr">「アプリがまったく違う」</span>こと</h2>
+<p>韓国では<span class="scr">「バスターミナル」</span>がひとつの統合システムではない。<strong>高速バス</strong>と<strong>市外バス</strong>は法律上も、予約アプリも、運営会社も別々だ。KTXのコレイルトーク (코레일톡) のような単一アプリが存在しない — これを知らずに適当なアプリを入れると、<span class="scr">「行きたい路線が検索に出てこない」</span>という状況をそのまま経験することになる。</p>
+<table><thead><tr>
+<th>区分</th>
+<th>高速バス (Express)</th>
+<th>市外バス (Intercity)</th>
+</tr></thead><tbody>
+<tr>
+<td>主につなぐ場所</td>
+<td>大都市間の直行 (ソウル↔釜山・大田・光州など)</td>
+<td>中小都市を経由 (邑・面単位の停留所含む)</td>
+</tr>
+<tr>
+<td>予約アプリ/サイト</td>
+<td><strong>kobus.co.kr</strong> ・高速バスTmoneyアプリ</td>
+<td><strong>Bustago (bustago.or.kr)</strong> ・TxBusアプリ</td>
+</tr>
+<tr>
+<td>停車方式</td>
+<td>ほぼノンストップ</td>
+<td>中間の停留所を複数経由(自分が乗るバスが停まるか事前確認)</td>
+</tr>
+<tr>
+<td>座席等級</td>
+<td>一般・優等・プレミアムの3種すべてあり</td>
+<td>一般・優等中心(プレミアムはまれ)</td>
+</tr>
+</tbody></table>
+<p><strong>核心</strong>: 目的地を検索して出てこなければ、<span class="scr">「路線がない」</span>のではなく<strong>別のアプリを開くべき</strong>というサインだ。大都市行きならkobus、小都市・経由地ならBustagoからまず検索する。</p>
+<h3>座席等級3種</h3>
+<table><thead><tr>
+<th>等級</th>
+<th>配置</th>
+<th>特徴</th>
+</tr></thead><tbody>
+<tr>
+<td>一般 (Standard)</td>
+<td>2+2</td>
+<td>最も安い、座席幅は普通</td>
+</tr>
+<tr>
+<td>優等 (Premium)</td>
+<td>2+1</td>
+<td>足元スペースが広い、KTXより安い代替手段として人気</td>
+</tr>
+<tr>
+<td>プレミアム (First)</td>
+<td>1+2</td>
+<td>マッサージシート・個人スペース、長距離路線中心</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="s3">② 予約4ルート — どこで、どうやって買うか</h2>
+<table><thead><tr>
+<th>方法</th>
+<th>どこで</th>
+<th>海外カード</th>
+<th>備考</th>
+</tr></thead><tbody>
+<tr>
+<td>公式サイト</td>
+<td>kobus.co.kr / bustago.or.kr — 英語・日本語・中国語対応</td>
+<td>拒否される頻度あり(VANインフラの特性、#527参照)</td>
+<td>路線・時刻表を先に確認するのに向いている</td>
+</tr>
+<tr>
+<td>アプリ</td>
+<td>高速バスTmoney / TxBus</td>
+<td>同様に拒否される可能性あり</td>
+<td>韓国語UI中心、事前にインストールしても画面自体に馴染みがないことがある</td>
+</tr>
+<tr>
+<td>ターミナル窓口(切符売り場)</td>
+<td>各ターミナルの切符売り場</td>
+<td>現金・ほとんどのカードOK</td>
+<td>一番確実なルート、目的地を言葉で言えなくても見せればいい</td>
+</tr>
+<tr>
+<td>発券機</td>
+<td>ターミナルロビーの無人機</td>
+<td>機械によって異なる</td>
+<td>③画面フロー参照</td>
+</tr>
+</tbody></table>
+<p><strong>海外カードがサイト・アプリで拒否され続けるとき</strong>: <strong>Klook</strong>で路線を検索して先に決済する(海外カードの通過率がはるかに高い)。予約確定後にQRバウチャーを受け取るが、このQRをターミナルの窓口・発券機で実物の乗車券に交換しなければならない路線が多い — QR画面のままそのまま乗車できるケースもあるので、確定のSMS・メールに<span class="scr">「交換必要」</span>の案内があるか確認する。</p>
+<hr>
+<h2 id="s4">③ 発券機の画面フロー — 画面そのまま</h2>
+<p>無人発券機はおおむね次の順序だ。</p>
+<p>1. <span class="scr">「高速バス / 市外バス」</span>を選択 — <strong>ここから分かれる</strong>、間違えると希望の路線が出てこない</p>
+<p>2. <span class="scr">「出発地 → 到着地」</span>検索画面 — 到着地をハングルまたは英文で入力</p>
+<p>3. <span class="scr">「日付・時間」</span>選択 → 時刻表リストから希望の便をタッチ</p>
+<p>4. <span class="scr">「座席等級」</span> <kbd>一般</kbd> <kbd>優等</kbd> <kbd>プレミアム</kbd> から選択</p>
+<p>5. <span class="scr">「座席配置図」</span>で座席を直接タッチ</p>
+<p>6. <span class="scr">「決済手段」</span> → カード挿入または現金投入</p>
+<p>7. 発券 → 切符(またはQR印刷)が出力される、乗車ホーム番号が一緒に印字される機械もある</p>
+<p>オプション画面で止まったら、たいてい画面下部の <kbd>確認</kbd> または <kbd>次へ</kbd> を押せていないせいだ。</p>
+<hr>
+<h2 id="s5">④ ターミナル現地フロー — 切符を持ってバスに座るまで</h2>
+<p>1. 待合室に入る → 電光掲示板で自分のバスを確認: バス番号(または目的地・出発時刻)と並んで<strong>乗車ホーム(プラットフォーム)番号</strong>が表示される</p>
+<p>2. 出発<strong>5~10分前</strong>に該当の乗車ホームへ移動 — 早めに行っても構わないが、バスが遅れて割り当てホームに着くこともあるので電光掲示板をもう一度確認</p>
+<p>3. 乗車ホームで待機中の運転手に<strong>切符またはQRを直接提示</strong></p>
+<p>4. 大きなスーツケースはバス側面の<strong>荷物置き場</strong>に運転手が入れてくれる — 荷物札(シール)を渡される場合は下車時に照合するので保管しておく</p>
+<p>乗車ホーム番号が予約段階で事前に表示されないことが多い点は、KTX(<a href="../ktx-first-ride-guide.html">#1287</a>、出発15分前公開)と同じ仕組みだ。電光掲示板が見つからなければ、待合室中央の案内デスク付近がたいてい一番見やすい位置だ。</p>
+<hr>
+<h2 id="s6">⑤ オンラインで予約したのに、なぜ窓口でまた切符を発券するのか</h2>
+<p>高速バス(kobus・Tmoney)は予約確定画面(モバイルQR)がそのまま乗車券になる場合が多い。一方、<strong>市外バス(Bustago・TxBus)は予約番号だけが発行され、ターミナルの発券機に予約番号(または生年月日)を入力して実物の乗車券を発券しないと運転手が認めない路線が少なくない。</strong> これも結局①の<span class="scr">「アプリが違う」</span>問題の延長線上にある — 市外バス路線を予約したなら、出発20~30分前に到着して発券機にまず立ち寄るのをデフォルトにしよう。</p>
+<hr>
+<h2 id="s7">⑥ サバイバル単語10</h2>
+<table class="survival"><thead><tr>
+<th>画面・案内板の韓国語</th>
+<th>読み方</th>
+<th>意味</th>
+</tr></thead><tbody>
+<tr>
+<td>切符売り場 (매표소) <button class="sm" type="button" data-ko="매표소" data-sub="切符売り場 (매표소)" aria-label="Show fullscreen">📢</button></td>
+<td>maepyoso</td>
+<td>Ticket window</td>
+</tr>
+<tr>
+<td>乗車ホーム (승차홈) <button class="sm" type="button" data-ko="승차홈" data-sub="乗車ホーム (승차홈)" aria-label="Show fullscreen">📢</button></td>
+<td>seungchahom</td>
+<td>Platform/boarding bay</td>
+</tr>
+<tr>
+<td>高速バス (고속버스) <button class="sm" type="button" data-ko="고속버스" data-sub="高速バス (고속버스)" aria-label="Show fullscreen">📢</button></td>
+<td>gosokbeoseu</td>
+<td>Express bus</td>
+</tr>
+<tr>
+<td>市外バス (시외버스) <button class="sm" type="button" data-ko="시외버스" data-sub="市外バス (시외버스)" aria-label="Show fullscreen">📢</button></td>
+<td>siwebeoseu</td>
+<td>Intercity bus</td>
+</tr>
+<tr>
+<td>優等 (우등) <button class="sm" type="button" data-ko="우등" data-sub="優等 (우등)" aria-label="Show fullscreen">📢</button></td>
+<td>udeung</td>
+<td>Premium seat</td>
+</tr>
+<tr>
+<td>経由 (경유) <button class="sm" type="button" data-ko="경유" data-sub="経由 (경유)" aria-label="Show fullscreen">📢</button></td>
+<td>gyeongyu</td>
+<td>Via/stops at</td>
+</tr>
+<tr>
+<td>直行 (직행) <button class="sm" type="button" data-ko="직행" data-sub="直行 (직행)" aria-label="Show fullscreen">📢</button></td>
+<td>jikaeng</td>
+<td>Direct/non-stop</td>
+</tr>
+<tr>
+<td>片道 (편도) <button class="sm" type="button" data-ko="편도" data-sub="片道 (편도)" aria-label="Show fullscreen">📢</button></td>
+<td>pyeondo</td>
+<td>One-way</td>
+</tr>
+<tr>
+<td>遅延 (지연) <button class="sm" type="button" data-ko="지연" data-sub="遅延 (지연)" aria-label="Show fullscreen">📢</button></td>
+<td>jiyeon</td>
+<td>Delayed</td>
+</tr>
+<tr>
+<td>払い戻し (환불) <button class="sm" type="button" data-ko="환불" data-sub="払い戻し (환불)" aria-label="Show fullscreen">📢</button></td>
+<td>hwanbul</td>
+<td>Refund</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="s8">⑦ パニックシナリオ3</h2>
+<p>1. <strong>予約したのに自分の路線がアプリにない</strong> — 間違ったアプリだ。高速バスアプリ(kobus・Tmoney)で見当たらなければ、Bustago・TxBusに切り替えて検索する。①の表をもう一度見れば1分で解決する。</p>
+<p>2. <strong>乗車ホームが見つからない</strong> — 電光掲示板が見当たらなければ、案内デスクや切符売り場の窓口に切符を見せながら<span class="scr">「ミョッ ボニエヨ? (몇 번이에요?)」</span>とだけ聞いても、指で教えてくれる。</p>
+<p>3. <strong>バスに乗り遅れた</strong> — 高速バスは運行間隔が短い路線(ソウル↔釜山など)なら、次便の待機切符に変更できる窓口が多い。市外バスは運行間隔が空いている路線もあるので、乗り遅れたらすぐ切符売り場へ行き、次便・払い戻しをその場で確認する。</p>
+<hr>
+<h2 id="s9">⑧ プランB — それでも行き詰まったら</h2>
+<p>アプリ・サイトがずっとうまくいかなければ<strong>窓口に行く</strong> — これが一番確実だ。目的地の名前を言葉で言えなくても、地図アプリやメモに書いた地名を見せれば、切符売り場のスタッフが適切な切符を見つけてくれる。カードが拒否されても、窓口ならたいてい別のカードや現金決済がすぐに可能だ。</p>
+<hr>
+<h2 id="s10">🔗 Related</h2>
+<ul>
+<li><strong>同シリーズ、鉄道編とペア</strong>: <a href="../ktx-first-ride-guide.html">#1287</a> 韓国KTXに初めて乗る — 改札のない駅・電光掲示板の読み方の構造が同じ</li>
+<li><strong>交通手段全体比較</strong>: <a href="https://mgself414.github.io/keychingu-content-deploy/content/ktx-intercity.ja.html">#239</a> KTX・高速バス郊外交通フルガイド — 料金・路線概要はこちらで</li>
+<li><strong>到着直後セット</strong>: <a href="../airport-to-city-guide.html">#1285</a> 空港から市内への手順ガイド・<a href="https://mgself414.github.io/keychingu-content-deploy/content/arrival-essentials.ja.html">#398</a> 到着必須(通信・決済・交通)</li>
+<li><strong>決済の深掘り</strong>: <a href="https://mgself414.github.io/keychingu-content-deploy/content/payment-system-deep.ja.html">#527</a> 韓国決済システムdeep dive — 海外カード拒否の構造</li>
+</ul>
+<hr>
+<h2 id="s11">🌐 EXTERNAL SOURCES</h2>
+<ul>
+<li><strong>高速バス公式(コーバス)</strong>: https://www.kobus.co.kr/</li>
+<li><strong>市外バス公式(バスタゴ)</strong>: https://www.bustago.or.kr/</li>
+<li><strong>Klook Korea Transport</strong>: https://www.klook.com/</li>
+<li><strong>VisitKorea</strong>: https://english.visitkorea.or.kr/</li>
+</ul></main>
+<dialog id="showme"><div class="sm-ko"></div><div class="sm-sub"></div></dialog>
+<script src="../assets/showme.js" defer></script>
+<footer class="foot">
+  <p><b>NO-PANIC</b> <span class="brand-k">KOREA</span> — Korea, screen by screen.</p>
+  <p class="powered">コンテンツ提供 <a href="https://mgself414.github.io/keychingu-content-deploy/" rel="noopener">KeyChinGu</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>カカオT タクシー実践ガイド — 会話なしで乗って降りる方法 | No-Panic Korea</title>
+  <meta name="description" content="海外番号での登録・アプリ内海外カード登録不可の罠と運転手直接決済の回避策・呼び出しフロー・K-RIDE vs カカオTの選択表・深夜割増と車種">
+  <link rel="canonical" href="https://mgself414.github.io/no-panic-korea/ja/kakao-taxi-guide.html">
+  <link rel="alternate" hreflang="en" href="https://mgself414.github.io/no-panic-korea/kakao-taxi-guide.html">
+  <link rel="alternate" hreflang="ko" href="https://mgself414.github.io/no-panic-korea/ko/kakao-taxi-guide.html">
+  <link rel="alternate" hreflang="ja" href="https://mgself414.github.io/no-panic-korea/ja/kakao-taxi-guide.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://mgself414.github.io/no-panic-korea/zh/kakao-taxi-guide.html">
+  <link rel="alternate" hreflang="x-default" href="https://mgself414.github.io/no-panic-korea/kakao-taxi-guide.html">
+  <meta property="og:title" content="カカオT タクシー実践ガイド — 会話なしで乗って降りる方法 | No-Panic Korea">
+  <meta property="og:description" content="海外番号での登録・アプリ内海外カード登録不可の罠と運転手直接決済の回避策・呼び出しフロー・K-RIDE vs カカオTの選択表・深夜割増と車種">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://mgself414.github.io/no-panic-korea/ja/kakao-taxi-guide.html">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../ja/index.html"><b>NO-PANIC</b> <span>KOREA</span></a>
+  <nav class="langs"><a href="../kakao-taxi-guide.html">EN</a><a href="../ko/kakao-taxi-guide.html">KO</a><a href="../ja/kakao-taxi-guide.html" class="on">JA</a><a href="../zh/kakao-taxi-guide.html">ZH</a></nav>
+</header>
+<main class="manual" style="--cat:var(--cat-move)"><a class="back" href="../ja/index.html">← すべての状況</a><div class="cat-chip">🚕</div><h1>カカオT タクシー実践ガイド — 会話なしで乗って降りる方法</h1><nav class="toc"><b>目次</b><ol><a href="#s1">🎯 このガイドの読み方 — 画面表記のルール</a><a href="#s2">① なぜカカオT (카카오T) が基本となるのか</a><a href="#s3">② 準備 — 海外番号で登録する</a><a href="#s4">③ 本当の罠 — 「カード登録ができない」→ 運転手に直接決済</a><a href="#s5">④ 配車マスターフロー — 出発地ピンからマッチングまで</a><a href="#s6">⑤ K-RIDE vs Kakao T — どちらを入れるべきか</a><a href="#s7">⑥ 降車決済 &amp; 車種 &amp; 深夜割増</a><a href="#s8">⑦ 会話ゼロで終わらせる方法</a><a href="#s9">⑧ サバイバル単語15 — 画面にこの文字が見えたらこの意味</a><a href="#s10">⑨ パニックシナリオ2 — 実際に起きることと対処法</a><a href="#s11">⑩ プランB — アプリが使えない時</a></ol></nav>
+<p>&gt; <strong>副題</strong>: 海外番号での登録 · <span class="scr">「カード登録ができない」</span>という罠を正面突破 · 配車マスターフロー · K-RIDE vs Kakao T の選び方 · 車種・深夜割増・サバイバル単語15 · 運転手とひと言も交わさず降りる方法</p>
+<p>ISSUE 04 · <a href="../kakao-taxi-guide.html">#1273</a> · 2026-08-15 · korea-first-timerシリーズ④</p>
+<hr>
+<h2 id="s1">🎯 このガイドの読み方 — 画面表記のルール</h2>
+<p>疑似画面の表記はシリーズSoT(<a href="../restaurant-kiosk-guide.html">#1270</a>)と同一です。</p>
+<ul>
+<li>画面内のボタンは角括弧で表記: <kbd>呼び出す (호출하기)</kbd></li>
+<li>画面タイトル・案内文はかぎ括弧で表記: <span class="scr">「決済手段登録 (결제수단 등록)」</span></li>
+<li>手で行う動作は<strong>太字</strong>: 「国コードのリストから<strong>自国の番号</strong>に切り替え」</li>
+</ul>
+<hr>
+<h2 id="s2">① なぜカカオT (카카오T) が基本となるのか</h2>
+<p>韓国の大都市では、道端で手を挙げて空車のタクシーを拾う方式が急速に減り、配車アプリが標準になりました。カカオTは韓国人利用者数・車両プールが圧倒的に大きく、配車が最も速いです。問題は決済です — この仕組みは韓国の電話番号・韓国発行のカードを前提に設計されているため、外国人観光客は登録はできても<strong>カード登録で詰まるケースが多い</strong>のです。この回の核心は、その地点を正面突破することです。</p>
+<hr>
+<h2 id="s3">② 準備 — 海外番号で登録する</h2>
+<table><thead><tr>
+<th>ステップ</th>
+<th>画面</th>
+<th>やること</th>
+<th>落とし穴/ヒント</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>App Storeで<span class="scr">「Kakao T」</span>検索</td>
+<td>インストール</td>
+<td>韓国のApp Storeアカウント不要 — 自国のアカウントでインストール可能</td>
+</tr>
+<tr>
+<td>2</td>
+<td><span class="scr">「会員登録 (회원가입)」</span>電話番号入力</td>
+<td>国コードリストを開く</td>
+<td><code>+82</code>(韓国)ではなく<strong>自国の国コード</strong>(<code>+1</code>・<code>+81</code>・<code>+86</code>など)を選択</td>
+</tr>
+<tr>
+<td>3</td>
+<td>SMS認証</td>
+<td>自国の番号に届いた認証番号を入力</td>
+<td>ローミングまたは現地SIMがSMS受信可能な状態である必要あり — SIM/eSIMセットアップは#1230必須アプリ編参照</td>
+</tr>
+<tr>
+<td>4</td>
+<td>利用規約への同意</td>
+<td>全体同意後、次へ</td>
+<td>—</td>
+</tr>
+<tr>
+<td>5</td>
+<td><span class="scr">「決済手段登録 (결제수단 등록)」</span></td>
+<td><strong>ほとんどの場合ここで詰まる</strong> → 次の③参照</td>
+<td>無理にカード追加を繰り返さず <kbd>後で (나중에)</kbd> / <kbd>スキップ (건너뛰기)</kbd></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="s4">③ 本当の罠 — <span class="scr">「カード登録ができない」</span>→ 運転手に直接決済</h2>
+<p>カカオTの基本決済方式は、アプリに登録したカードで降車時に<strong>自動請求</strong>される自動決済です。この自動決済を登録するには決済手段画面で<strong>もう一度本人認証(SMS)</strong>が要求されますが、この認証は韓国で開通された番号を前提に設計されています(2026年4月時点)。②で海外番号での登録に成功していても、ここでまた詰まるのが普通です — あなたのカードや操作ミスの問題ではありません。</p>
+<p><strong>標準的な回避策 = 運転手に直接決済(現地決済)</strong></p>
+<ul>
+<li><span class="scr">「決済手段登録 (결제수단 등록)」</span>画面でカード追加を繰り返し試みず、<kbd>後で (나중에)</kbd> に進みます。</li>
+<li>カードを1枚も登録しない状態にしておくと、配車時に自動的に<strong><span class="scr">「運転手に直接決済」</span></strong>方式に切り替わります。</li>
+<li>降車時に運転手のカード端末で直接決済するか、現金で支払います — 端末決済は⑥で扱います。</li>
+<li>一部のレビューでは海外のKakao Pay (카카오페이) アカウント連携で登録できたという事例も見られますが、再現性は低いです。このガイドは再試行に時間を使わず、<strong>直接決済を標準の経路</strong>とすることを推奨します。</li>
+</ul>
+<hr>
+<h2 id="s5">④ 配車マスターフロー — 出発地ピンからマッチングまで</h2>
+<table><thead><tr>
+<th>ステップ</th>
+<th>画面</th>
+<th>やること</th>
+<th>落とし穴</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>地図+出発地ピン</td>
+<td>ピンが実際の位置と合っているか確認、違えば地図を<strong>指で動かして</strong>再調整</td>
+<td>GPS誤差で建物の反対側にピンが立つことがある</td>
+</tr>
+<tr>
+<td>2</td>
+<td>目的地検索窓</td>
+<td>場所名(英語)または住所を入力 → 検索結果を選択</td>
+<td>ハングルの地名を知らなくても英語検索でほとんど出てくる、出なければ地図で直接ピンを立てる</td>
+</tr>
+<tr>
+<td>3</td>
+<td>車種選択画面</td>
+<td>一般/ブルー/ブラック/ベンティの中から選択 — 画面に予想料金が表示される</td>
+<td>あくまで予想料金であり確定料金ではない(交通状況により変動)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><kbd>呼び出す (호출하기)</kbd></td>
+<td>大きなボタンをタッチ</td>
+<td>押した瞬間から配車検索が始まる — キャンセル時は状況によりキャンセル料が発生する可能性あり</td>
+</tr>
+<tr>
+<td>5</td>
+<td>配車完了画面</td>
+<td>運転手の写真・車両番号・車種・到着予定時間を表示</td>
+<td>乗車前に<strong>車両ナンバープレートを画面と照合</strong> — 基本の安全ルール</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="s6">⑤ K-RIDE vs Kakao T — どちらを入れるべきか</h2>
+<table><thead><tr>
+<th>基準</th>
+<th>Kakao T</th>
+<th>K-RIDE</th>
+</tr></thead><tbody>
+<tr>
+<td>性格</td>
+<td>韓国人も使う標準アプリ、車両プール最大</td>
+<td>カカオモビリティが作った<strong>外国人専用アプリ</strong></td>
+</tr>
+<tr>
+<td>言語</td>
+<td>韓国語が基本</td>
+<td>英語など外国語優先設計</td>
+</tr>
+<tr>
+<td>決済</td>
+<td>自動決済は韓国番号が前提 → ③の回避策が必要</td>
+<td>外国人向け設計のため海外カードの流れが相対的にスムーズ</td>
+</tr>
+<tr>
+<td>カバレッジ・速度</td>
+<td>全国、マッチング最速</td>
+<td>空港・主要観光エリア中心の場合あり — 地域により異なる、出国前にストアでサービス地域の最新情報確認を推奨</td>
+</tr>
+<tr>
+<td>おすすめの対象</td>
+<td>③の回避設定を終えた人、速い配車を優先する人</td>
+<td>カード登録の問題自体を避けたい人、英語UIが楽な初めての訪問者</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="s7">⑥ 降車決済 &amp; 車種 &amp; 深夜割増</h2>
+<p><strong>端末での海外カード</strong></p>
+<ul>
+<li>タクシーのカード端末はほとんどがVisa・Mastercardなど海外カード決済を受け付けます — カード自体が拒否されるケースは稀です。</li>
+<li>海外発行カードは通常利用限度額が設定されています: <strong>月50万ウォン・1回20万ウォン</strong>程度(カード会社・商品により異なる)。空港↔市内など長距離料金がこの限度額に近づくことがあるため、出国前にカード会社の限度額を確認しておくと安心です。</li>
+<li>カードが弾かれたら: 別のカードで再試行 → それでもダメなら現金。</li>
+</ul>
+<p><strong>車種区分</strong></p>
+<table><thead><tr>
+<th>車種</th>
+<th>特徴</th>
+</tr></thead><tbody>
+<tr>
+<td>一般 (일반)</td>
+<td>標準的な中型タクシー</td>
+</tr>
+<tr>
+<td>ブルー (블루)</td>
+<td>カカオ加盟の中型、配車優先度が高い</td>
+</tr>
+<tr>
+<td>ブラック (블랙)</td>
+<td>大型プレミアムセダン</td>
+</tr>
+<tr>
+<td>ベンティ (벤티)</td>
+<td>大型ワゴン — キャリーケース・人数が多い時</td>
+</tr>
+</tbody></table>
+<p>&gt; 正確な料金倍率は時期・地域によって変わります。画面に表示される予想料金をそのまま信じるのが一番安全です。</p>
+<p><strong>深夜割増</strong>: 深夜時間帯は自動的に割増料金が加算されます(正確な時刻・割増率は自治体・時期によって調整される場合あり)。アプリの予想料金画面にすでに反映されて表示されるため、自分で計算する必要はありません — 画面の数字がそのまま支払う金額です。</p>
+<hr>
+<h2 id="s8">⑦ 会話ゼロで終わらせる方法</h2>
+<p>目的地は④の配車ステップですでにアプリを通じて運転手の画面に伝わっています。乗車後に目的地を改めて言う必要はありません。</p>
+<ul>
+<li>乗車時に挨拶ひと言(<span class="scr">「アンニョンハセヨ」</span>)で十分 — あとは運転手のナビゲーションが進めてくれます。</li>
+<li>何か確認したければ、画面をキャプチャして見せることで会話の代わりにできます。</li>
+<li>移動経路はアプリの地図でリアルタイムに見られるので、話さなくても確認できます。</li>
+</ul>
+<hr>
+<h2 id="s9">⑧ サバイバル単語15 — 画面にこの文字が見えたらこの意味</h2>
+<table class="survival"><thead><tr>
+<th>画面の韓国語</th>
+<th>読み方(ローマ字)</th>
+<th>意味</th>
+</tr></thead><tbody>
+<tr>
+<td>ホチュルハギ (호출하기)</td>
+<td>hochulhagi</td>
+<td>Request ride(配車を呼ぶ) — 呼び出しボタン</td>
+</tr>
+<tr>
+<td>チュルバルジ (출발지)</td>
+<td>chulbalji</td>
+<td>Pickup location(出発地)</td>
+</tr>
+<tr>
+<td>モクチョクジ (목적지)</td>
+<td>mokjeokji</td>
+<td>Destination(目的地)</td>
+</tr>
+<tr>
+<td>イェサン ヨグム (예상 요금)</td>
+<td>yesang yogeum</td>
+<td>Estimated fare(予想料金)</td>
+</tr>
+<tr>
+<td>ペチャ ワルリョ (배차 완료)</td>
+<td>baecha wanryo</td>
+<td>Driver assigned(配車完了)</td>
+</tr>
+<tr>
+<td>ギサニム (기사님)</td>
+<td>gisanim</td>
+<td>Driver(運転手、敬称)</td>
+</tr>
+<tr>
+<td>ドチャク イェジョン (도착 예정)</td>
+<td>dochak yejeong</td>
+<td>Estimated arrival(到着予定)</td>
+</tr>
+<tr>
+<td>タプスン (탑승)</td>
+<td>tapseung</td>
+<td>Boarding(搭乗)</td>
+</tr>
+<tr>
+<td>ハチャ (하차)</td>
+<td>hacha</td>
+<td>Drop-off(降車)</td>
+</tr>
+<tr>
+<td>キョルジェ スダン (결제 수단)</td>
+<td>gyeolje sudan</td>
+<td>Payment method(決済手段)</td>
+</tr>
+<tr>
+<td>ヒョングム キョルジェ (현금 결제)</td>
+<td>hyeongeum gyeolje</td>
+<td>Cash payment(現金決済)</td>
+</tr>
+<tr>
+<td>カドゥ キョルジェ (카드 결제)</td>
+<td>kadeu gyeolje</td>
+<td>Card payment(カード決済)</td>
+</tr>
+<tr>
+<td>チュィソ (취소)</td>
+<td>chwiso</td>
+<td>Cancel(キャンセル)</td>
+</tr>
+<tr>
+<td>チュルギョチャッキ (즐겨찾기)</td>
+<td>jeulgyeochatgi</td>
+<td>Saved places(お気に入り)</td>
+</tr>
+<tr>
+<td>ピョルジョム (별점)</td>
+<td>byeoljeom</td>
+<td>Rating(評価)</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="s10">⑨ パニックシナリオ2 — 実際に起きることと対処法</h2>
+<p>1. <strong>配車がずっとつかまらない</strong> — 車種を一般→ブルーに変更してみる、出発地ピンを大きな通り沿いに移動する、ピーク時間帯(通勤・深夜)なら数分待って再試行。それでもダメなら⑩プランBに切り替え。</p>
+<p>2. <strong>経路が変な方向に遠回りしている気がする</strong> — アプリの地図にリアルタイム経路がそのまま表示されるので静かに確認すれば十分です。明らかに違う場所で降ろそうとしている場合は、画面の目的地を指しながら<span class="scr">「ヒア(here)」</span>と示すか、降車後にアプリ内の問い合わせ/通報機能で申告します。</p>
+<hr>
+<h2 id="s11">⑩ プランB — アプリが使えない時</h2>
+<ul>
+<li><strong>流しの空車</strong>: タクシーの屋根灯が点灯していれば(色は車種・地域により異なる)空車です。手を挙げてつかまえられます — 目的地は紙に書くか翻訳アプリの画面を見せます。</li>
+<li><strong>国際タクシー</strong>: 仁川空港 (인천공항) など主要空港には事前予約・英語対応の運転手を中心とした国際タクシーサービスがあります。空港移動のように確実に準備しておきたい時の選択肢です。</li>
+</ul>
+<hr>
+<h2 id="s12">🔗 Related</h2>
+<ul>
+<li><strong>korea-first-timerシリーズ</strong>: ① <a href="../restaurant-kiosk-guide.html">#1270</a> キオスク注文・② 市内バス・③ <a href="../delivery-app-guide.html">#1272</a> 配達アプリの実用・④(この回)カカオT タクシー・(予定)待ち時間アプリ</li>
+<li><strong>到着直後セット</strong>: <a href="https://mgself414.github.io/keychingu-content-deploy/content/korea-essential-apps.ja.html">#1230</a> 必須アプリ12 — SIM/eSIMセットアップが②のSMS認証の前提</li>
+<li><strong>公共交通全般</strong>: <a href="https://mgself414.github.io/keychingu-content-deploy/content/transport.ja.html">#080</a> 交通</li>
+<li><strong>決済深掘り</strong>: <a href="https://mgself414.github.io/keychingu-content-deploy/content/payment-system-deep.ja.html">#527</a> 韓国決済システムdeep dive・<a href="https://mgself414.github.io/keychingu-content-deploy/content/exchange-card-atm.ja.html">#435</a> 両替・カード・ATM</li>
+</ul>
+<hr>
+<h2 id="s13">🌐 EXTERNAL SOURCES</h2>
+<ul>
+<li><strong>Korea JoongAng Daily</strong>: https://koreajoongangdaily.joins.com/ (海外カード・デジタル障壁の報道)</li>
+<li><strong>VisitKorea</strong>: https://english.visitkorea.or.kr/</li>
+<li><strong>Kakao Mobility</strong>: https://www.kakaomobility.com/ (サービス概要参考)</li>
+</ul></main>
+<footer class="foot">
+  <p><b>NO-PANIC</b> <span class="brand-k">KOREA</span> — Korea, screen by screen.</p>
+  <p class="powered">コンテンツ提供 <a href="https://mgself414.github.io/keychingu-content-deploy/" rel="noopener">KeyChinGu</a></p>
+</footer>
+</body>
+</html>

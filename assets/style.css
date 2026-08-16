@@ -1,0 +1,111 @@
+/* No-Panic Korea — brand tokens & layout (2026-08-16) */
+:root {
+  --ink: #1A2330;
+  --paper: #FAFAF7;
+  --brand: #0E7C6B;
+  --alert: #E8912D;
+  --cat-eat: #E85D3D;
+  --cat-move: #2B6CB0;
+  --cat-pay: #2F855A;
+  --cat-live: #6B46C1;
+  --soft: #5A6572;
+  --line: #E3E1DA;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, "Segoe UI", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.75;
+}
+
+/* header / footer */
+.top {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 14px 20px; border-bottom: 1px solid var(--line);
+  position: sticky; top: 0; background: var(--paper); z-index: 10;
+}
+.brand { text-decoration: none; color: var(--ink); font-size: 17px; letter-spacing: .5px; }
+.brand b { font-weight: 900; }
+.brand span { color: var(--brand); font-weight: 700; }
+.langs a {
+  text-decoration: none; color: var(--soft); font-size: 12.5px; font-weight: 700;
+  padding: 4px 8px; border-radius: 6px; margin-left: 2px;
+}
+.langs a.on { background: var(--ink); color: #fff; }
+.foot { text-align: center; padding: 40px 20px 48px; color: var(--soft); font-size: 13.5px; border-top: 1px solid var(--line); margin-top: 56px; }
+.foot b { color: var(--ink); }
+.foot .brand-k { color: var(--brand); font-weight: 700; }
+.foot .powered a { color: var(--soft); }
+
+/* home */
+.homepage { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+.hero { text-align: center; padding: 52px 0 28px; }
+.hero h1 { font-size: clamp(30px, 7vw, 44px); letter-spacing: 1px; font-weight: 400; }
+.hero h1 b { font-weight: 900; }
+.hero .tag { color: var(--brand); font-weight: 700; margin-top: 4px; }
+.hero .lead { color: var(--soft); margin-top: 14px; font-size: 16.5px; }
+.grp { margin: 34px 0; }
+.grp h2 { font-size: 15px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--soft); margin-bottom: 12px; }
+.sit-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; }
+.sit {
+  display: flex; align-items: center; gap: 12px;
+  padding: 16px 18px; background: #fff; border: 1px solid var(--line);
+  border-left: 4px solid var(--cat); border-radius: 12px;
+  text-decoration: none; color: var(--ink); font-weight: 700; font-size: 15px;
+  transition: transform .12s, box-shadow .12s;
+}
+.sit:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(26,35,48,.08); }
+.sit .ico { font-size: 26px; }
+
+/* manual page */
+.manual { max-width: 760px; margin: 0 auto; padding: 28px 20px 40px; }
+.manual .back { display: inline-block; color: var(--soft); text-decoration: none; font-size: 13.5px; margin-bottom: 14px; }
+.manual .cat-chip { font-size: 34px; margin-bottom: 6px; }
+.manual h1 { font-size: clamp(23px, 5vw, 30px); line-height: 1.35; margin: 6px 0 14px; }
+.manual h2 { font-size: 20px; margin: 40px 0 12px; padding-top: 10px; border-top: 2px solid var(--cat, var(--line)); }
+.manual h3 { font-size: 16.5px; margin: 24px 0 8px; }
+.manual p { margin: 10px 0; }
+.manual ul, .manual ol { margin: 10px 0 10px 22px; }
+.manual li { margin: 4px 0; }
+.manual blockquote {
+  border-left: 4px solid var(--brand); background: #fff;
+  padding: 12px 16px; border-radius: 8px; margin: 14px 0; color: var(--soft); font-size: 14.5px;
+}
+.manual a { color: var(--brand); }
+.manual code { background: #EFEDE6; padding: 1px 6px; border-radius: 5px; font-size: .92em; }
+.manual hr { border: none; border-top: 1px solid var(--line); margin: 28px 0; }
+
+/* 의사화면 표기: 버튼 칩·화면 라벨 */
+kbd {
+  display: inline-block; font-family: inherit; font-size: .9em; font-weight: 700;
+  background: var(--ink); color: #fff; padding: 2px 12px; border-radius: 8px;
+  box-shadow: 0 2px 0 rgba(0,0,0,.25); white-space: nowrap;
+}
+.scr { color: var(--cat-move); font-weight: 700; }
+
+/* tables */
+.manual table {
+  width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 14.5px;
+  display: block; overflow-x: auto; white-space: normal; background: #fff; border-radius: 10px;
+}
+.manual th, .manual td { border: 1px solid var(--line); padding: 8px 12px; text-align: left; vertical-align: top; }
+.manual th { background: #F1EFE8; font-size: 13px; }
+.manual table.survival { border: 2px solid var(--brand); border-radius: 12px; }
+.manual table.survival th { background: var(--brand); color: #fff; }
+
+/* TOC */
+.toc {
+  background: #fff; border: 1px solid var(--line); border-radius: 12px;
+  padding: 14px 18px; margin: 18px 0 8px; font-size: 13.5px;
+}
+.toc b { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: var(--soft); margin-bottom: 8px; }
+.toc ol { display: flex; flex-wrap: wrap; gap: 6px 14px; list-style: none; margin: 0; }
+.toc a { color: var(--ink); text-decoration: none; }
+.toc a:hover { color: var(--brand); }
+
+@media (max-width: 560px) {
+  .sit-grid { grid-template-columns: 1fr; }
+  .manual table { font-size: 13px; }
+  .manual th, .manual td { padding: 6px 8px; }
+}

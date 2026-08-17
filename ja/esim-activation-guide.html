@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>韓国eSIM開通、パニックゼロの手順書 — インストールは出国前、アクティベーションは到着後 | No-Panic Korea</title>
+  <meta name="description" content="タイミング原則(空港でQRを読むにはWi-Fiが要る逆説)・iPhone/Androidインストールフロー・到着直後チェックリスト(データ回線指定→ローミングON)・3段トラブルシューティング・自国回線の料金爆弾防止">
+  <link rel="canonical" href="https://mgself414.github.io/no-panic-korea/ja/esim-activation-guide.html">
+  <link rel="alternate" hreflang="en" href="https://mgself414.github.io/no-panic-korea/esim-activation-guide.html">
+  <link rel="alternate" hreflang="ko" href="https://mgself414.github.io/no-panic-korea/ko/esim-activation-guide.html">
+  <link rel="alternate" hreflang="ja" href="https://mgself414.github.io/no-panic-korea/ja/esim-activation-guide.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://mgself414.github.io/no-panic-korea/zh/esim-activation-guide.html">
+  <link rel="alternate" hreflang="x-default" href="https://mgself414.github.io/no-panic-korea/esim-activation-guide.html">
+  <meta property="og:title" content="韓国eSIM開通、パニックゼロの手順書 — インストールは出国前、アクティベーションは到着後 | No-Panic Korea">
+  <meta property="og:description" content="タイミング原則(空港でQRを読むにはWi-Fiが要る逆説)・iPhone/Androidインストールフロー・到着直後チェックリスト(データ回線指定→ローミングON)・3段トラブルシューティング・自国回線の料金爆弾防止">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://mgself414.github.io/no-panic-korea/ja/esim-activation-guide.html">
+  <meta property="og:image" content="https://mgself414.github.io/no-panic-korea/og/esim-activation-guide.png">
+  <link rel="icon" href="../favicon.png">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../ja/index.html"><b>NO-PANIC</b> <span>KOREA</span></a>
+  <nav class="langs"><a href="../esim-activation-guide.html">EN</a><a href="../ko/esim-activation-guide.html">KO</a><a href="../ja/esim-activation-guide.html" class="on">JA</a><a href="../zh/esim-activation-guide.html">ZH</a></nav>
+</header>
+<main class="manual" style="--cat:var(--cat-live)"><a class="back" href="../ja/index.html">← すべての状況</a><div class="cat-chip">📱</div><h1>韓国eSIM開通、パニックゼロの手順書 — インストールは出国前、アクティベーションは到着後</h1><nav class="toc"><b>目次</b><ol><a href="#s1">🎯 この手順書の読み方 — 画面表記のルール</a><a href="#s2">① この記事が扱うもの — 「インストール」と「アクティベーション」を混同すると空港で詰まる理由</a><a href="#s3">② eSIMか物理USIMか — まず自分のスマホを確認</a><a href="#s4">③ インストールマスターフロー — 出国前、自宅Wi-Fiで</a><a href="#s5">④ 到着直後アクティベーションチェックリスト — 3段階</a><a href="#s6">⑤ スマホ画面の重要用語6 — 混同しやすいものだけ</a><a href="#s7">⑥ つながらない時の3段階トラブルシューティング</a><a href="#s8">⑦ ホーム回線(元のSIM)維持のコツ — 高額請求を防ぐ</a><a href="#s9">⑧ パニックシナリオ3</a><a href="#s10">⑨ プランB — eSIMがどうしてもダメな時</a></ol></nav>
+<p>&gt; <strong>副題</strong>: 韓国eSIMインストール・アクティベーション専用実践ガイド — <span class="scr">「インストール vs アクティベーション」</span>タイミング原則を正面突破・eSIM vs 物理USIM選択の分岐・iPhone/Androidインストールマスターフロー・到着直後チェックリスト3段階・つながらない時のトラブルシューティング3段階・ホーム回線維持のコツ</p>
+<p>ISSUE 04 · <a href="../esim-activation-guide.html">#1303</a> · 2026-08-17 · korea-first-timerシリーズ㉞</p>
+<hr>
+<h2 id="s1">🎯 この手順書の読み方 — 画面表記のルール</h2>
+<p>この記事は<span class="scr">「eSIMとは何か」</span>ではなく、<strong><span class="scr">「自分のスマホ画面で何を、いつ、どの順番で押すのか」</span></strong>をそのまま書く。eSIM自体の紹介・物理USIMとの料金・購入先比較は#250ですでに扱った — この記事はインストール・アクティベーション手順専用だ。</p>
+<p>(表記ルールは#1270で確定した3種 — 角括弧ボタン・かぎ括弧画面・太字動作 — をそのまま使用する)</p>
+<hr>
+<h2 id="s2">① この記事が扱うもの — <span class="scr">「インストール」</span>と<span class="scr">「アクティベーション」</span>を混同すると空港で詰まる理由</h2>
+<p>eSIM失敗談のほとんどは、たった一つの勘違いから始まる。<strong><span class="scr">「空港に着いてからeSIMを入れればいいだろう。」</span></strong></p>
+<p>間違いだ。eSIMをスマホに埋め込む工程(<strong>インストール、install</strong>)はQRコードをスキャンしてプロファイルをダウンロードする作業なので、<strong>インターネット接続が必要</strong>だ。ところが空港に着いたばかりの時点では、まだローミングもWi-Fiもつながっていない状態 — つまり「QRをスキャンするにはデータが必要なのに、データをオンにするにはまずQRをスキャンしなければならない」という逆説にはまる。空港Wi-Fiをつかめばいいじゃないかと思うだろうが、ログイン画面で迷う・速度低下で荷物を受け取って出てくるその短い時間に冷や汗をかくケースが実際には最も多い。</p>
+<p>正解は順序を分けることだ。</p>
+<ul>
+<li><strong>インストール(install)は出国前、自宅Wi-Fiで</strong> — 時間に余裕があるうちにQRスキャンまで終わらせておく</li>
+<li><strong>アクティベーション(activate)は到着後</strong> — 飛行機を降りてローミングをオンにした瞬間から実際にデータがつながる</li>
+</ul>
+<p>この一文さえ覚えておけば、この記事の半分は終わったも同然だ。残り半分は③④⑥だ。</p>
+<hr>
+<h2 id="s3">② eSIMか物理USIMか — まず自分のスマホを確認</h2>
+<p>eSIMはすべてのスマホで使えるわけではない。<strong>eSIM対応モデル</strong>(iPhone XS以降のほとんど・ここ3~4年のGalaxy/Pixelフラッグシップなど)であり、かつ<strong>SIMフリーまたはロック解除(unlock)状態</strong>である必要がある。自国キャリアでeSIMロックがかかっていたり旧機種だったりすると、そもそも開かない。</p>
+<ul>
+<li>対応の有無がはっきりしなければ出国前に<strong>設定 → 一般(または端末情報) → eSIM対応の有無</strong>を確認するか、購入先の案内でモデル名から確認するのが一番早い。</li>
+<li>eSIMが使えない機種だったり不安が残るなら<strong>物理USIM</strong>にすればいい — 空港のキャリアブースやコンビニで実物のUSIMを買って差し替える方式には、このQR・タイミング問題自体がない。</li>
+<li>eSIM vs 物理USIMの料金・データオプション・購入先の全体比較は<strong><a href="https://mgself414.github.io/keychingu-content-deploy/content/foreigner-sim.ja.html">#250</a></strong>で扱った。この記事は<span class="scr">「すでにeSIMに決めた人」</span>のインストール・アクティベーション手順だけに絞る。</li>
+</ul>
+<hr>
+<h2 id="s4">③ インストールマスターフロー — 出国前、自宅Wi-Fiで</h2>
+<p>eSIMは通常<strong>メールでQRコード</strong>が届く(購入サイト・プロバイダから発行)。そのQRを以下の順にスキャンすればインストールは終わる。<strong>必ず出国前、自宅Wi-Fi接続の状態</strong>で進める。</p>
+<table><thead><tr>
+<th>手順</th>
+<th>iPhone</th>
+<th>Android</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><span class="scr">「設定」</span>アプリを開く</td>
+<td><span class="scr">「設定」</span>アプリを開く</td>
+</tr>
+<tr>
+<td>2</td>
+<td><kbd>モバイル通信</kbd>(または<kbd>モバイルデータ</kbd>)をタップ</td>
+<td><kbd>ネットワークとインターネット</kbd>をタップ</td>
+</tr>
+<tr>
+<td>3</td>
+<td><kbd>eSIMを追加</kbd>または<kbd>モバイル通信プランを追加</kbd></td>
+<td><kbd>SIM管理</kbd>をタップ</td>
+</tr>
+<tr>
+<td>4</td>
+<td><kbd>QRコードを使用</kbd>を選択</td>
+<td><kbd>eSIMを追加</kbd>をタップ</td>
+</tr>
+<tr>
+<td>5</td>
+<td>カメラでメール内の<strong>QRコードをスキャン</strong></td>
+<td><kbd>代わりにQRコードでダウンロード</kbd> → QRスキャン</td>
+</tr>
+<tr>
+<td>6</td>
+<td><span class="scr">「モバイル通信プランが追加されました」</span>を確認 → ラベル設定(例: &quot;Korea&quot;)</td>
+<td><span class="scr">「eSIMのダウンロードが完了しました」</span>を確認</td>
+</tr>
+</tbody></table>
+<ul>
+<li>QRは<strong>一度しかスキャンできない</strong>場合が多い — スキャン前に画面を消したり開き直したりせず、スクリーンショットではなくメール原本から直接スキャンすること。</li>
+<li>インストールが終わってもすぐデータがつながるわけではない。今はスマホにeSIMが<strong>埋め込まれただけ</strong>で、次の段階(④)を経て初めて実際にオンになる。</li>
+</ul>
+<hr>
+<h2 id="s5">④ 到着直後アクティベーションチェックリスト — 3段階</h2>
+<p>飛行機を降りて電源を入れたら、この順番でやるだけでいい。</p>
+<p>1. <strong>該当eSIMをモバイルデータに指定</strong> — 設定 → モバイル通信/モバイルデータ → 先ほどインストールした<span class="scr">「Korea」</span>回線をデフォルトのデータ回線として選択</p>
+<p>2. <strong>データローミングをON</strong> — 同じ画面内の<kbd>データローミング</kbd>トグルをオンにする。<strong>eSIMを入れてもこのトグルがオフのままだとデータがつながらないプロバイダが多い</strong> — 最もよく見落とす段階</p>
+<p>3. <strong>機内モードをオフ→オン</strong> — 二つの設定が終わったら機内モードを一瞬ONにしてから再びOFFにする。アンテナが新しい設定を再取得してつながるケースがほとんど</p>
+<p>三段階が終わると画面上部にキャリア名と信号表示(LTE/5G)が出る。1~2分かかることがあるので、すぐに出ないからといって再起動から始めず、少し待ってみよう。</p>
+<hr>
+<h2 id="s6">⑤ スマホ画面の重要用語6 — 混同しやすいものだけ</h2>
+<p>三つの言葉が似ていて間違って押してしまうケースが多い。混乱したらこの表に戻ってこよう。</p>
+<table><thead><tr>
+<th>用語</th>
+<th>意味</th>
+<th>混同しやすい理由</th>
+</tr></thead><tbody>
+<tr>
+<td>モバイル通信 / モバイルデータ通信 (셀룰러 / 모바일 데이터)</td>
+<td>データ回線全体を管理するメニュー名</td>
+<td>iPhoneは<span class="scr">「モバイル通信」</span>、Androidは<span class="scr">「モバイルデータ」</span>と呼び名が違うだけ — 同じ場所</td>
+</tr>
+<tr>
+<td>eSIMを追加 (eSIM 추가)</td>
+<td>新しいQRを取り込む<strong>インストール</strong>ボタン</td>
+<td>すでにインストール済みのeSIMを再度ここで押してはいけない — ④は別メニュー</td>
+</tr>
+<tr>
+<td>データローミング (데이터 로밍)</td>
+<td>海外でデータを使えるようにするスイッチ</td>
+<td><strong>モバイルデータONとは別物</strong> — 両方オンにしないとつながらない</td>
+</tr>
+<tr>
+<td>既定回線 (기본 회선)</td>
+<td>2つのSIMのうち実際にデータを使う回線の指定</td>
+<td>ホームSIMが既定のままだとeSIMを入れても使われない</td>
+</tr>
+<tr>
+<td>APN</td>
+<td>キャリア接続設定値</td>
+<td>自動設定が失敗したときだけ手動入力(⑥)</td>
+</tr>
+<tr>
+<td>SIM管理 (SIM 관리자, Android)</td>
+<td>eSIM・物理USIMをまとめて管理する画面</td>
+<td>iPhoneの<span class="scr">「eSIMを追加」</span>に相当するAndroidの呼び名</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="s7">⑥ つながらない時の3段階トラブルシューティング</h2>
+<p>④を全部やってもつながらなければ、この順番で確認する。<strong>順番通りに</strong>、一つずつ。</p>
+<p>1. <strong>ローミングONの再確認</strong> — 最も多い原因。設定 → モバイル通信/モバイルデータ → 先ほどオンにしたeSIM回線 → <kbd>データローミング</kbd>が本当にオンになっているか、もう一度目で確認</p>
+<p>2. <strong>APN手動入力</strong> — 自動設定が失敗した可能性がある。購入時に届いたメール・プロバイダ案内に記載のAPN値を設定 → モバイル通信 → eSIM回線 → <kbd>APN設定</kbd>にそのまま入力する。<strong>創作禁止 — 必ずプロバイダ案内の値をそのまま入力</strong></p>
+<p>3. <strong>機内モードトグル → それでもダメなら再起動</strong> — ④の3段階をもう一度繰り返し、それでもダメならスマホ自体の電源を切って入れ直す</p>
+<p>三段階をすべて試してもダメなら、eSIM自体の問題(インストール失敗・QR期限切れ)の可能性が高い — ⑨プランBへ。</p>
+<hr>
+<h2 id="s8">⑦ ホーム回線(元のSIM)維持のコツ — 高額請求を防ぐ</h2>
+<p>eSIMを追加で入れても、もともと使っていたホームSIMはスマホの中にそのまま残っている。これを放置すると、韓国にいる間もホームキャリアが自動でローミングデータをつかんで使ってしまい、帰国後の請求書に驚くことになる。</p>
+<ul>
+<li>ホームSIM(または物理USIM)の<strong>データローミングは必ずOFF</strong>に変えておく — ④でオンにしたのは新しいeSIM側のローミングで、こちらは逆にオフにすべきもの</li>
+<li>電話・SMSだけホーム回線で受けたいなら、データはeSIM、通話はホーム回線に指定する<strong>デュアルSIM個別設定</strong>が可能だ(⑤<span class="scr">「既定回線」</span>メニューでデータ/通話を別々に指定)</li>
+<li>帰国直後は逆にeSIM側のローミングをオフにしておくと、残ったデータが無駄に消費されるのを防げる</li>
+</ul>
+<hr>
+<h2 id="s9">⑧ パニックシナリオ3</h2>
+<p>1. <strong>到着したのにデータがつながらない</strong> — ④のチェックリスト3段階をもう一度確認し、それでもダメなら⑥のトラブルシューティングへ。ほとんどはデータローミングがオフになっているのが原因だ。</p>
+<p>2. <strong>QRメールが見つからない</strong> — 購入サイトのアカウント(ログイン)から注文履歴で再確認できる場合が多い。迷惑メールフォルダも確認しよう。空港Wi-Fiがつかめればその場で再発行の問い合わせも可能だが、そもそも③を出国前に終わらせておくのがこのシナリオ自体を防ぐ方法だ。</p>
+<p>3. <strong>自分のスマホがeSIM非対応だと分かった</strong> — 慌てる必要はない。②に戻って物理USIMに切り替えればいい — 空港でその場で購入・開通可能だ(⑨)。</p>
+<hr>
+<h2 id="s10">⑨ プランB — eSIMがどうしてもダメな時</h2>
+<ul>
+<li><strong>空港のキャリアブースで物理USIMを受け取る</strong> — 入国審査通過後に通信3社(SKT・KT・LG U+)のブースがある。パスポート提示後すぐに開通するUSIMをその場で買える。</li>
+<li><strong>公共Wi-Fiでまず急場をしのぐ</strong> — 空港・地下鉄・主要観光地の公共Wi-Fi実用法は<strong><a href="../public-wifi-guide.html">#1302</a></strong>で扱う。eSIM問題を解決するまでの一時しのぎとして便利だ。</li>
+<li><strong>出国前の準備を一度に終わらせたいなら</strong> — eSIMインストールを含む到着前の準備物セットは<strong><a href="../e-arrival-card-guide.html">#1289</a> e-Arrival手続きガイド</strong>とセットで整理しておくと、空港で開く画面が減る。</li>
+</ul>
+<hr>
+<h2 id="s11">🔗 Related</h2>
+<ul>
+<li><strong>eSIM vs 物理USIM比較・購入先</strong>: <strong><a href="https://mgself414.github.io/keychingu-content-deploy/content/foreigner-sim.ja.html">#250</a> SIM・eSIM・WiFiフルガイド</strong> — この記事はそのうちeSIMインストール・アクティベーション手順だけを深掘り</li>
+<li><strong>到着前準備セット</strong>: <a href="../e-arrival-card-guide.html">#1289</a> e-Arrival手続きガイド・<a href="https://mgself414.github.io/keychingu-content-deploy/content/arrival-essentials.ja.html">#398</a> 到着必須(通信・決済・交通)</li>
+<li><strong>同シリーズ</strong>:<a href="../public-wifi-guide.html">#1302</a> 公共Wi-Fi実用ガイド</li>
+<li><strong>必須アプリ</strong>: <a href="https://mgself414.github.io/keychingu-content-deploy/content/korea-essential-apps.ja.html">#1230</a> 必須アプリ12 — eSIM購入サイトのアプリもここでまとめて整理</li>
+</ul>
+<hr>
+<h2 id="s12">🌐 EXTERNAL SOURCES</h2>
+<ul>
+<li><strong>VisitKorea</strong>: https://english.visitkorea.or.kr/</li>
+<li><strong>Seoul Tourism</strong>: https://english.visitseoul.net/</li>
+</ul></main>
+<dialog id="showme"><div class="sm-ko"></div><div class="sm-sub"></div></dialog>
+<script src="../assets/showme.js" defer></script>
+<footer class="foot">
+  <p><b>NO-PANIC</b> <span class="brand-k">KOREA</span> — Korea, screen by screen.</p>
+  <p class="powered">コンテンツ提供 <a href="https://mgself414.github.io/keychingu-content-deploy/" rel="noopener">KeyChinGu</a></p>
+</footer>
+</body>
+</html>

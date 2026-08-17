@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>韓国公共Wi-Fi接続、迷わない方法 — 「Secure」が付いた方を選べ | No-Panic Korea</title>
+  <meta name="description" content="SSID2種の分岐(SEOUL vs SEOUL_Secure — ID・PWとも「seoul」・自動再接続)・接続フロー・バスWi-Fi・セキュリティ3か条(バンキングはデータ通信で)・カフェWi-Fiパスワード文化">
+  <link rel="canonical" href="https://mgself414.github.io/no-panic-korea/ja/public-wifi-guide.html">
+  <link rel="alternate" hreflang="en" href="https://mgself414.github.io/no-panic-korea/public-wifi-guide.html">
+  <link rel="alternate" hreflang="ko" href="https://mgself414.github.io/no-panic-korea/ko/public-wifi-guide.html">
+  <link rel="alternate" hreflang="ja" href="https://mgself414.github.io/no-panic-korea/ja/public-wifi-guide.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://mgself414.github.io/no-panic-korea/zh/public-wifi-guide.html">
+  <link rel="alternate" hreflang="x-default" href="https://mgself414.github.io/no-panic-korea/public-wifi-guide.html">
+  <meta property="og:title" content="韓国公共Wi-Fi接続、迷わない方法 — 「Secure」が付いた方を選べ | No-Panic Korea">
+  <meta property="og:description" content="SSID2種の分岐(SEOUL vs SEOUL_Secure — ID・PWとも「seoul」・自動再接続)・接続フロー・バスWi-Fi・セキュリティ3か条(バンキングはデータ通信で)・カフェWi-Fiパスワード文化">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://mgself414.github.io/no-panic-korea/ja/public-wifi-guide.html">
+  <meta property="og:image" content="https://mgself414.github.io/no-panic-korea/og/public-wifi-guide.png">
+  <link rel="icon" href="../favicon.png">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../ja/index.html"><b>NO-PANIC</b> <span>KOREA</span></a>
+  <nav class="langs"><a href="../public-wifi-guide.html">EN</a><a href="../ko/public-wifi-guide.html">KO</a><a href="../ja/public-wifi-guide.html" class="on">JA</a><a href="../zh/public-wifi-guide.html">ZH</a></nav>
+</header>
+<main class="manual" style="--cat:var(--cat-live)"><a class="back" href="../ja/index.html">← すべての状況</a><div class="cat-chip">📶</div><h1>韓国公共Wi-Fi接続、迷わない方法 — <span class="scr">「Secure」</span>が付いた方を選べ</h1><nav class="toc"><b>目次</b><ol><a href="#s1">🎯 このガイドの読み方 — 画面表記のルール</a><a href="#s2">① ソウル公共Wi-Fi、どこで使えるか</a><a href="#s3">② SSID2種 — SEOULとSEOUL_Secure、迷う必要はない</a><a href="#s4">③ 接続マスターフロー — 画面そのままに進める</a><a href="#s5">④ 市内バスWi-Fiは別枠 — 見落としやすいポイント</a><a href="#s6">⑤ セキュリティ心得3行 — 公共網でこれだけはやるな</a><a href="#s7">⑥ カフェWi-Fiパスワード文化 — レシートと壁を見よ</a><a href="#s8">⑦ サバイバル単語6 — 画面にこの文字が見えたら</a><a href="#s9">⑧ パニックシナリオ3</a><a href="#s10">⑨ プランB — 公共Wi-Fiがどうしてもつながらないとき</a></ol></nav>
+<p>&gt; <strong>副題</strong>: ソウル公共Wi-Fi完全攻略 — SSID2種の見分け方(SEOUL vs SEOUL_Secure)・接続マスターフロー画面そのまま・市内バスWi-Fi・セキュリティ心得3行・カフェのパスワード文化・eSIM併用戦略</p>
+<p>ISSUE 04 · <a href="../public-wifi-guide.html">#1302</a> · 2026-08-17 · korea-first-timerシリーズ㉝</p>
+<hr>
+<h2 id="s1">🎯 このガイドの読み方 — 画面表記のルール</h2>
+<p>この記事も前回のキオスク編(<a href="../restaurant-kiosk-guide.html">#1270</a>)と同じルールを使う。画面に何が表示され、どこを押すのかをそのまま書く。</p>
+<ul>
+<li>画面上のボタンは角括弧で表記: <kbd>接続 (연결)</kbd></li>
+<li>画面タイトル・案内文はかぎ括弧で表記: <span class="scr">「パスワード入力 (비밀번호 입력)」</span></li>
+<li>手で行う動作は<strong>太字</strong>: 「ID・パスワード欄にそれぞれ<strong>seoul</strong>を入力」</li>
+</ul>
+<hr>
+<h2 id="s2">① ソウル公共Wi-Fi、どこで使えるか</h2>
+<p>ソウルはクァンファムン (광화문)・ミョンドン (명동)・ホンデ (홍대) のような主要な通り、ハンガン公園 (한강공원) をはじめとする公園、クァンジャン市場 (광장시장) のような伝統市場、住民センター (주민센터)・図書館 (도서관) のような福祉施設、そして<strong>ソウル市内バスの車内</strong>にまで無料の公共Wi-Fiを敷いている。つまり<span class="scr">「宿を出たらネットが切れる」</span>という心配は、ソウル市内に限ってはそれほどしなくていい — 正確なSSIDさえ知っていれば。</p>
+<hr>
+<h2 id="s3">② SSID2種 — SEOULとSEOUL_Secure、迷う必要はない</h2>
+<p>Wi-Fiリストを開くと似た名前が2つ表示される。ここで迷う人が多い。原則は一つだけだ: <strong><span class="scr">「Secure」</span>が付いた方を選べ。</strong></p>
+<table><thead><tr>
+<th>SSID</th>
+<th>方式</th>
+<th>接続</th>
+<th>特徴</th>
+</tr></thead><tbody>
+<tr>
+<td><code>SEOUL</code></td>
+<td>開放型(パスワードなし)</td>
+<td>接続のたびにログインページを通過する必要あり</td>
+<td>毎回利用規約同意・ログイン画面を見直す必要があり面倒</td>
+</tr>
+<tr>
+<td><strong><code>SEOUL_Secure</code></strong></td>
+<td>セキュリティ型(WPA2)</td>
+<td><strong>ID <code>seoul</code>・パスワード <code>seoul</code></strong> — 一度だけ入力</td>
+<td><strong>一度設定しておけば次回から自動再接続。</strong>この記事が推す選択肢</td>
+</tr>
+</tbody></table>
+<p><code>SEOUL</code>は名前が目立つので先に押しやすいが、毎回ログイン画面を通過し直す必要があって面倒だ。<strong><code>SEOUL_Secure</code>を一度つかんでおけば、ソウルのどこでも聞き直されずに自動でつながる。</strong>旅行中ずっと楽なのは後者だ。</p>
+<hr>
+<h2 id="s4">③ 接続マスターフロー — 画面そのままに進める</h2>
+<p>一度やっておけば終わる手順だ。以下の順にタップするだけでいい。</p>
+<table><thead><tr>
+<th>手順</th>
+<th>画面に表示されるもの</th>
+<th>やること</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>スマホの<span class="scr">「Wi-Fi設定 (설정)」</span>リスト</td>
+<td>近くのWi-Fiリストを開く</td>
+</tr>
+<tr>
+<td>2</td>
+<td>リストに<code>SEOUL</code>と<code>SEOUL_Secure</code>が並んで表示</td>
+<td><strong><code>SEOUL_Secure</code></strong>をタップ(<code>SEOUL</code>ではないので注意)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><span class="scr">「ID Username (아이디)」</span>入力欄</td>
+<td><strong>seoul</strong>と入力</td>
+</tr>
+<tr>
+<td>4</td>
+<td><span class="scr">「パスワード Password (비밀번호)」</span>入力欄</td>
+<td><strong>seoul</strong>と入力(IDと同じ)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>下部の大きなボタン</td>
+<td><kbd>接続 (연결)</kbd>または<kbd>参加 Join (가입)</kbd>をタップ</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Wi-Fiアイコンにチェック表示</td>
+<td>接続完了 — 以降はソウル市内の他の<code>SEOUL_Secure</code>ホットスポットにも<strong>自動再接続</strong></td>
+</tr>
+</tbody></table>
+<p>一度設定すれば、この表を見返す必要はもうない。それが<code>SEOUL_Secure</code>を選ぶ理由だ。</p>
+<hr>
+<h2 id="s5">④ 市内バスWi-Fiは別枠 — 見落としやすいポイント</h2>
+<p>ソウル市内バスの車内にも無料Wi-Fiが敷かれているが、上の<code>SEOUL_Secure</code>とは<strong>別の接続手順</strong>だ。バスの天井や窓際に貼られた案内ステッカーのSSIDをリストから探して接続する必要がある。バス乗車そのもの(カードタッチ・乗り換え・降車ベル)の方がハードルが高いので、バス利用手順とバスWi-Fi接続は<strong><a href="../city-bus-guide.html">#1271</a> 市内バスの乗り方</strong>編で画面ごと扱う。この記事は<span class="scr">「通り・公園の公共Wi-Fi」</span>に絞る。</p>
+<hr>
+<h2 id="s6">⑤ セキュリティ心得3行 — 公共網でこれだけはやるな</h2>
+<p>公共Wi-Fiは名前の通り不特定多数が一緒に使う開放されたネットワークだ。便利だが以下の3つは守ろう。</p>
+<p>1. <strong>銀行アプリのログイン・口座照会は公共Wi-Fiで行わない</strong> — それはデータ(eSIM/ローミング)で。</p>
+<p>2. <strong>パスポート番号・カード番号のような個人情報入力フォーム</strong>は公共網で開かない。</p>
+<p>3. <strong>オンラインショッピングの決済</strong>も同様 — 宿のWi-Fiかデータに回す。</p>
+<p>道案内・翻訳・SNSチェック程度は心配せずに使ってよい。お金と個人情報が動く瞬間だけデータに切り替えればいい。</p>
+<hr>
+<h2 id="s7">⑥ カフェWi-Fiパスワード文化 — レシートと壁を見よ</h2>
+<p>スターバックスなど大手フランチャイズカフェは別途ログインなしで自動的につながる場合が多い。一方、個人カフェ・ベーカリーは<strong>レシート下部に小さく印刷されているか、レジ横の壁・メニュー表に紙で貼ってある</strong>パスワードを探す必要がある。見当たらなければ店員に<span class="scr">「Wi-Fiのパスワードありますか? Wi-Fi password?」</span>と聞けばすぐ教えてくれる — さほど気まずい質問ではない。</p>
+<hr>
+<h2 id="s8">⑦ サバイバル単語6 — 画面にこの文字が見えたら</h2>
+<table class="survival"><thead><tr>
+<th>画面の韓国語</th>
+<th>読み方</th>
+<th>意味</th>
+</tr></thead><tbody>
+<tr>
+<td>Wi-Fi (와이파이) <button class="sm" type="button" data-ko="와이파이" data-sub="Wi-Fi (와이파이)" aria-label="Show fullscreen">📢</button></td>
+<td>wai-pai</td>
+<td>Wi-Fi</td>
+</tr>
+<tr>
+<td>パスワード (비밀번호) <button class="sm" type="button" data-ko="비밀번호" data-sub="パスワード (비밀번호)" aria-label="Show fullscreen">📢</button></td>
+<td>bimil-beonho</td>
+<td>Password</td>
+</tr>
+<tr>
+<td>接続 (연결) <button class="sm" type="button" data-ko="연결" data-sub="接続 (연결)" aria-label="Show fullscreen">📢</button></td>
+<td>yeon-gyeol</td>
+<td>Connect</td>
+</tr>
+<tr>
+<td>設定 (설정) <button class="sm" type="button" data-ko="설정" data-sub="設定 (설정)" aria-label="Show fullscreen">📢</button></td>
+<td>seoljeong</td>
+<td>Settings</td>
+</tr>
+<tr>
+<td>自動接続 (자동 연결) <button class="sm" type="button" data-ko="자동 연결" data-sub="自動接続 (자동 연결)" aria-label="Show fullscreen">📢</button></td>
+<td>jadong yeon-gyeol</td>
+<td>Auto-connect(チェックボックスをオンにしておくと便利)</td>
+</tr>
+<tr>
+<td>インターネット未接続 (인터넷 안 됨) <button class="sm" type="button" data-ko="인터넷 안 됨" data-sub="インターネット未接続 (인터넷 안 됨)" aria-label="Show fullscreen">📢</button></td>
+<td>inteonet an doem</td>
+<td>&quot;No internet&quot; 警告文言</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="s9">⑧ パニックシナリオ3</h2>
+<p>1. <strong>接続はできたのにインターネットが表示されない</strong> — <code>SEOUL</code>(開放型)につながったのにログインページが自動で開かなかった場合だ。ブラウザで適当なページを新しく開いてみるとログイン画面が出る。それでもダメなら<code>SEOUL_Secure</code>に切り替えて接続しよう。</p>
+<p>2. <strong>リストに<code>SEOUL</code>しか見えず<code>SEOUL_Secure</code>がない</strong> — 場所によっては<code>SEOUL_Secure</code>のホットスポットがない区間もある。その場合は<code>SEOUL</code>で接続し、次に<code>SEOUL_Secure</code>が表示される地域で一度だけ設定しておけば、その後は問題ない。</p>
+<p>3. <strong>電波が弱くてすぐ切れる</strong> — 公共Wi-Fiは屋外・開放空間基準なので、建物の中や地下では弱くなるのが普通だ。カフェ・店舗の中なら⑥のカフェWi-Fiに乗り換える方がいい。</p>
+<hr>
+<h2 id="s10">⑨ プランB — 公共Wi-Fiがどうしてもつながらないとき</h2>
+<ul>
+<li><strong>eSIMデータに切り替える</strong>: 公共Wi-Fiはあくまで補助手段だ。移動中ずっと切れるなら、最初からeSIMデータをオンにしておく方がストレスがない — インストール・アクティベーション手順は<strong><a href="../esim-activation-guide.html">#1303</a> eSIMガイド</strong>を参照。</li>
+<li><strong>コンビニの前</strong>: GS25・CUなどのコンビニ店舗前は独自Wi-Fiを開放している所が多く、公共Wi-Fiの隙間を埋める一時的な拠点として使える。</li>
+</ul>
+<hr>
+<h2 id="s11">🔗 Related</h2>
+<ul>
+<li><strong>eSIMデータ</strong>: <a href="../esim-activation-guide.html">#1303</a> eSIMインストール・アクティベーションガイド — 公共Wi-Fiが切れたときの本命の代案</li>
+<li><strong>市内バス</strong>: <a href="../city-bus-guide.html">#1271</a> ソウル市内バスの乗り方 — 車内の別Wi-Fi接続を含む</li>
+<li><strong>道案内</strong>: <a href="../naver-map-guide.html">#1295</a> Naver地図実用ガイド — Wi-Fi接続後に最初に開くべきアプリ</li>
+<li><strong>同シリーズ</strong>: <a href="../restaurant-kiosk-guide.html">#1270</a> キオスク注文ガイド</li>
+</ul>
+<hr>
+<h2 id="s12">🌐 EXTERNAL SOURCES</h2>
+<ul>
+<li><strong>ソウル市公式</strong>: https://wifi.seoul.go.kr/ (公共Wi-Fi SSID・カバレッジ公式案内)</li>
+<li><strong>VisitKorea</strong>: https://english.visitkorea.or.kr/</li>
+<li><strong>Seoul Tourism</strong>: https://english.visitseoul.net/</li>
+</ul></main>
+<dialog id="showme"><div class="sm-ko"></div><div class="sm-sub"></div></dialog>
+<script src="../assets/showme.js" defer></script>
+<footer class="foot">
+  <p><b>NO-PANIC</b> <span class="brand-k">KOREA</span> — Korea, screen by screen.</p>
+  <p class="powered">コンテンツ提供 <a href="https://mgself414.github.io/keychingu-content-deploy/" rel="noopener">KeyChinGu</a></p>
+</footer>
+</body>
+</html>

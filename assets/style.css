@@ -11,6 +11,11 @@
   --cat-live: #6B46C1;
   --soft: #5A6572;
   --line: #E3E1DA;
+  /* 표면·대비 토큰 — 다크 대응을 위해 하드코딩돼 있던 값을 승격 (2026-08-31) */
+  --card: #fff;         /* 카드·표·인용 배경 */
+  --code-bg: #EFEDE6;   /* 인라인 코드 */
+  --th-bg: #F1EFE8;     /* 표 헤더 */
+  --on-ink: #fff;       /* --ink 를 배경으로 쓸 때의 글자색 */
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -33,7 +38,7 @@ body {
   text-decoration: none; color: var(--soft); font-size: 12.5px; font-weight: 700;
   padding: 4px 8px; border-radius: 6px; margin-left: 2px;
 }
-.langs a.on { background: var(--ink); color: #fff; }
+.langs a.on { background: var(--ink); color: var(--on-ink); }
 .foot { text-align: center; padding: 40px 20px 48px; color: var(--soft); font-size: 13.5px; border-top: 1px solid var(--line); margin-top: 56px; }
 .foot b { color: var(--ink); }
 .foot .brand-k { color: var(--brand); font-weight: 700; }
@@ -51,7 +56,7 @@ body {
 .sit-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; }
 .sit {
   display: flex; align-items: center; gap: 12px;
-  padding: 16px 18px; background: #fff; border: 1px solid var(--line);
+  padding: 16px 18px; background: var(--card); border: 1px solid var(--line);
   border-left: 4px solid var(--cat); border-radius: 12px;
   text-decoration: none; color: var(--ink); font-weight: 700; font-size: 15px;
   transition: transform .12s, box-shadow .12s;
@@ -70,17 +75,17 @@ body {
 .manual ul, .manual ol { margin: 10px 0 10px 22px; }
 .manual li { margin: 4px 0; }
 .manual blockquote {
-  border-left: 4px solid var(--brand); background: #fff;
+  border-left: 4px solid var(--brand); background: var(--card);
   padding: 12px 16px; border-radius: 8px; margin: 14px 0; color: var(--soft); font-size: 14.5px;
 }
 .manual a { color: var(--brand); }
-.manual code { background: #EFEDE6; padding: 1px 6px; border-radius: 5px; font-size: .92em; }
+.manual code { background: var(--code-bg); padding: 1px 6px; border-radius: 5px; font-size: .92em; }
 .manual hr { border: none; border-top: 1px solid var(--line); margin: 28px 0; }
 
 /* 의사화면 표기: 버튼 칩·화면 라벨 */
 kbd {
   display: inline-block; font-family: inherit; font-size: .9em; font-weight: 700;
-  background: var(--ink); color: #fff; padding: 2px 12px; border-radius: 8px;
+  background: var(--ink); color: var(--on-ink); padding: 2px 12px; border-radius: 8px;
   box-shadow: 0 2px 0 rgba(0,0,0,.25); white-space: nowrap;
 }
 .scr { color: var(--cat-move); font-weight: 700; }
@@ -94,20 +99,20 @@ kbd {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   margin: 14px 0;
-  background: #fff; border-radius: 10px;
+  background: var(--card); border-radius: 10px;
 }
 .manual table {
   width: 100%; border-collapse: collapse; margin: 0; font-size: 14.5px;
-  white-space: normal; background: #fff; border-radius: 10px;
+  white-space: normal; background: var(--card); border-radius: 10px;
 }
 .manual th, .manual td { border: 1px solid var(--line); padding: 8px 12px; text-align: left; vertical-align: top; }
-.manual th { background: #F1EFE8; font-size: 13px; }
+.manual th { background: var(--th-bg); font-size: 13px; }
 .manual table.survival { border: 2px solid var(--brand); border-radius: 12px; }
 .manual table.survival th { background: var(--brand); color: #fff; }
 
 /* TOC */
 .toc {
-  background: #fff; border: 1px solid var(--line); border-radius: 12px;
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px;
   padding: 14px 18px; margin: 18px 0 8px; font-size: 13.5px;
 }
 .toc b { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: var(--soft); margin-bottom: 8px; }
@@ -135,7 +140,7 @@ button.sm:hover { opacity: 1; transform: scale(1.15); }
 
 /* 키보드 포커스 — 이전에는 :focus 규칙이 CSS 전체에 0건이었다. */
 :focus-visible {
-  outline: 3px solid #0E7C6B;
+  outline: 3px solid var(--brand);
   outline-offset: 2px;
   border-radius: 2px;
 }
@@ -161,3 +166,33 @@ dialog#showme .sm-ko {
   word-break: keep-all;
 }
 dialog#showme .sm-sub { margin-top: 20px; font-size: clamp(1rem, 4vw, 1.8rem); color: #555; }
+
+/* ── 다크 모드 (2026-08-31 신설) ──────────────────────────────
+   OS 설정만 따른다(토글 없음) — 키친구 기사 페이지와 같은 방식.
+   값은 배경 #12161C 기준 대비를 계산해 정했다. 현행 밝은-면 색을 그대로
+   쓰면 cat-live 가 2.83:1 로 읽히지 않는다(전부 6:1 이상으로 올림).
+     ink 14.93 · soft 6.97 · brand 6.18 · eat 5.24 · move 7.22
+     pay 8.04 · play 6.99 · live 6.52 · alert 7.36
+   Show-Me 전체화면 dialog 는 **일부러 밝게 둔다** — 직원에게 화면을 보여주는
+   용도라 어두운 가게에서도 흰 바탕이 가장 잘 읽힌다. 읽는 면이 아니라 보여주는 면. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #12161C;
+    --ink: #E7E9ED;
+    --soft: #9AA1AC;
+    --line: rgba(255, 255, 255, 0.13);
+    --card: #1A1F26;
+    --code-bg: #232830;
+    --th-bg: #232830;
+    --on-ink: #12161C;      /* --ink 가 밝아졌으므로 글자는 어둡게 뒤집는다 */
+    --brand: #2FA894;
+    --alert: #E8912D;
+    --cat-eat: #F08163;
+    --cat-move: #6BA8E5;
+    --cat-pay: #5FBF8A;
+    --cat-play: #E87FB0;
+    --cat-live: #A98BE8;
+  }
+  /* survival 표 헤더는 brand 배경 위 흰 글자 — 다크에서도 그대로 유지한다 */
+  .manual table.survival th { color: #fff; }
+}

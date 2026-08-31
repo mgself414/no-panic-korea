@@ -1,0 +1,53 @@
+# No-Panic Korea
+
+> Korea, screen by screen. — Survival manuals for first-time visitors to Korea — screen by screen.
+
+4 languages (en / ko / ja / zh). Canonical site for the situation manuals;
+long-form travel guides live at https://mgself414.github.io/keychingu-content-deploy/.
+
+## Manuals
+
+- [How to Use a Kiosk in Korea: The No-Panic Screen-by-Screen Manual](https://mgself414.github.io/no-panic-korea/restaurant-kiosk-guide.html)
+- [Food Delivery Apps in Korea: Baemin and Coupang Eats, From Address Input to Doorstep Pickup](https://mgself414.github.io/no-panic-korea/delivery-app-guide.html)
+- [Waitlists and Reservations in Korea: No Phone Call Needed](https://mgself414.github.io/no-panic-korea/waiting-app-guide.html)
+- [How to Ride the City Bus in Seoul: Tap Twice, Exit by the Rear Door](https://mgself414.github.io/no-panic-korea/city-bus-guide.html)
+- [Kakao T Taxi for Foreigners: When Card Registration Fails, Pay the Driver Directly](https://mgself414.github.io/no-panic-korea/kakao-taxi-guide.html)
+- [Tipping & Paying in Korea: The No-Panic Manual for the Counter](https://mgself414.github.io/no-panic-korea/tipping-paying-guide.html)
+- [Trash & Cup Returns in Korea: The No-Panic Manual for a Country Without Street Bins](https://mgself414.github.io/no-panic-korea/trash-cup-return-guide.html)
+- [Finding a Restroom in Korea: The No-Panic Manual — Subway, Department Store, CVS](https://mgself414.github.io/no-panic-korea/public-restroom-guide.html)
+- [Buying Medicine in Korea: The No-Panic Manual with One-Sentence Symptom Cards](https://mgself414.github.io/no-panic-korea/pharmacy-guide.html)
+- [Outlets, Voltage & Charging in Korea: The No-Panic Manual — a 30-Second Device Check](https://mgself414.github.io/no-panic-korea/power-outlet-guide.html)
+- [Coin Laundry in Korea: The No-Panic Manual — Follow the Machine Screen](https://mgself414.github.io/no-panic-korea/coin-laundry-guide.html)
+- [Riding the Seoul Subway for the First Time: The No-Panic Manual, Ticket Machine to Deposit Refund](https://mgself414.github.io/no-panic-korea/subway-first-ride-guide.html)
+- [Korean Photo Booths (Life4Cuts): The No-Panic Manual — the QR Trap and the Countdown](https://mgself414.github.io/no-panic-korea/photo-booth-guide.html)
+- [The Noraebang Remote, Decoded: The No-Panic Manual — the 한/영 Button Is Everything](https://mgself414.github.io/no-panic-korea/noraebang-machine-guide.html)
+- [The Jjimjilbang Wristband System: The No-Panic Manual — One Band Is Your Key and Your Wallet](https://mgself414.github.io/no-panic-korea/jjimjilbang-wristband-guide.html)
+- [Incheon Airport to the City: The No-Panic Manual — Express or All-Stop, Decided in One Table](https://mgself414.github.io/no-panic-korea/airport-to-city-guide.html)
+- [Withdrawing Cash at Korean ATMs: The No-Panic Manual — Always Press KRW on the DCC Screen](https://mgself414.github.io/no-panic-korea/atm-withdrawal-guide.html)
+- [Taking the KTX for the First Time: The No-Panic Manual — Yes, There's No Ticket Gate](https://mgself414.github.io/no-panic-korea/ktx-first-ride-guide.html)
+- [The Korean Cafe Buzzer: The No-Panic Manual — What to Do After You Order](https://mgself414.github.io/no-panic-korea/cafe-pickup-guide.html)
+- [Korea's e-Arrival Card: The No-Panic Manual — File Your Entry Form 72 Hours Before You Fly](https://mgself414.github.io/no-panic-korea/e-arrival-card-guide.html)
+- [The Korean BBQ Table, Decoded: The No-Panic Manual — Who Grills, and Why the Scissors](https://mgself414.github.io/no-panic-korea/kbbq-table-system-guide.html)
+- [Korean Restaurant Table Systems: The No-Panic Manual — the Spoons Are in the Drawer](https://mgself414.github.io/no-panic-korea/restaurant-table-system-guide.html)
+- [The Convenience Store Hot Corner: The No-Panic Manual — the 3-Minute Ramyeon Ritual and the 3-Step Kimbap](https://mgself414.github.io/no-panic-korea/cvs-hot-corner-guide.html)
+- [Self Check-in & Bag Drop at Incheon: The No-Panic Manual — the Last Machine of Your Trip](https://mgself414.github.io/no-panic-korea/airport-self-checkin-guide.html)
+- [Seoul's Ddareungi Bike Share: The No-Panic Manual — It's Not Returned Until the App Says So](https://mgself414.github.io/no-panic-korea/ddareungi-guide.html)
+- [Naver Map Directions: The No-Panic Manual — the Exit Number Is the Answer](https://mgself414.github.io/no-panic-korea/naver-map-guide.html)
+- [Renting a Hanbok: The No-Panic Manual — Deposits, Fitting, and the Free Palace Entry](https://mgself414.github.io/no-panic-korea/hanbok-rental-guide.html)
+- [Korean Express & Intercity Buses: The No-Panic Manual — Knowing They Use Different Apps Is Half the Battle](https://mgself414.github.io/no-panic-korea/intercity-bus-guide.html)
+- [Choosing Your Korea Transit Card: The No-Panic Manual — T-money, WOWPASS, or Climate Card](https://mgself414.github.io/no-panic-korea/transit-card-guide.html)
+- [When in Trouble, Dial 1330: The No-Panic Manual for Korea's 24h Multilingual Travel Hotline](https://mgself414.github.io/no-panic-korea/emergency-hotline-guide.html)
+- [Less Spicy, Vegan, Halal: The No-Panic Manual — Dietary Requests You Just Show](https://mgself414.github.io/no-panic-korea/dietary-request-guide.html)
+- [Where You Actually Need Cash in Korea: The No-Panic Manual — and How Much to Carry](https://mgself414.github.io/no-panic-korea/cash-zones-guide.html)
+- [Connecting to Seoul's Free WiFi: The No-Panic Manual — the Password Is Just "seoul"](https://mgself414.github.io/no-panic-korea/public-wifi-guide.html)
+- [Activating Your Korea eSIM: The No-Panic Manual — Install at Home, Activate on Arrival](https://mgself414.github.io/no-panic-korea/esim-activation-guide.html)
+- [Korea Tax Refund at the Airport Kiosk: The No-Panic Manual — Scan Before You Check Your Bag](https://mgself414.github.io/no-panic-korea/tax-refund-kiosk-guide.html)
+- [Seoul Subway Lockers (T-Locker): The No-Panic Manual — Touchscreen, Step by Step](https://mgself414.github.io/no-panic-korea/subway-locker-guide.html)
+- [Self-Checkout and Night Unmanned Stores in Korea: The No-Panic Manual — From Door Tap to Payment](https://mgself414.github.io/no-panic-korea/self-checkout-guide.html)
+- [Seeing a Doctor in Korea: The No-Panic Manual — From Reception to Pharmacy with Just Your Passport](https://mgself414.github.io/no-panic-korea/clinic-visit-guide.html)
+- [Finding a Place to Smoke in Korea, the Zero-Panic Manual — How Not to Get Fined](https://mgself414.github.io/no-panic-korea/korea-smoking-guide.html)
+- [You Get Your Duty-Free Items at the Airport — The Zero-Panic Manual for the Pickup Counter](https://mgself414.github.io/no-panic-korea/duty-free-pickup-guide.html)
+
+## About
+
+- [About](https://mgself414.github.io/no-panic-korea/about.html)

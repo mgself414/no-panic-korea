@@ -86,9 +86,19 @@ kbd {
 .scr { color: var(--cat-move); font-weight: 700; }
 
 /* tables */
+/* 스크롤은 래퍼(.table-scroll)가 맡고 table 은 table 로 남긴다 — 2026-08-31 점검 A6-a.
+   이전에는 .manual table 에 display:block 을 걸어 가로 스크롤을 얻었는데,
+   그러면 브라우저/보조기술 조합에 따라 표의 행·열 관계가 소실될 수 있다.
+   이 사이트는 절차(step) 정보 대부분이 표 안에 있어 순서 관계가 특히 중요하다. */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 14px 0;
+  background: #fff; border-radius: 10px;
+}
 .manual table {
-  width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 14.5px;
-  display: block; overflow-x: auto; white-space: normal; background: #fff; border-radius: 10px;
+  width: 100%; border-collapse: collapse; margin: 0; font-size: 14.5px;
+  white-space: normal; background: #fff; border-radius: 10px;
 }
 .manual th, .manual td { border: 1px solid var(--line); padding: 8px 12px; text-align: left; vertical-align: top; }
 .manual th { background: #F1EFE8; font-size: 13px; }

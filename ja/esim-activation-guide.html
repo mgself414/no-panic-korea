@@ -26,7 +26,7 @@
 </header>
 <main class="manual" style="--cat:var(--cat-live)"><a class="back" href="../ja/index.html">← すべての状況</a><div class="cat-chip">📱</div><h1>韓国eSIM開通、パニックゼロの手順書 — インストールは出国前、アクティベーションは到着後</h1>
 <blockquote><p><strong>副題</strong>: 韓国eSIMインストール・アクティベーション専用実践ガイド — <span class="scr">「インストール vs アクティベーション」</span>タイミング原則を正面突破・eSIM vs 物理USIM選択の分岐・iPhone/Androidインストールマスターフロー・到着直後チェックリスト3段階・つながらない時のトラブルシューティング3段階・ホーム回線維持のコツ</p></blockquote><nav class="toc"><b>目次</b><ol><li><a href="#s1">🎯 この手順書の読み方 — 画面表記のルール</a></li><li><a href="#s2">① この記事が扱うもの — 「インストール」と「アクティベーション」を混同すると空港で詰まる理由</a></li><li><a href="#s3">② eSIMか物理USIMか — まず自分のスマホを確認</a></li><li><a href="#s4">③ インストールマスターフロー — 出国前、自宅Wi-Fiで</a></li><li><a href="#s5">④ 到着直後アクティベーションチェックリスト — 3段階</a></li><li><a href="#s6">⑤ スマホ画面のサバイバル単語6 — 混同しやすいものだけ</a></li><li><a href="#s7">⑥ つながらない時の3段階トラブルシューティング</a></li><li><a href="#s8">⑦ ホーム回線(元のSIM)維持のコツ — 高額請求を防ぐ</a></li><li><a href="#s9">⑧ パニックシナリオ3</a></li><li><a href="#s10">⑨ プランB — eSIMがどうしてもダメな時</a></li></ol></nav>
-<p>ISSUE 04 · <a href="../esim-activation-guide.html">#1303</a> · 2026-08-17 · korea-first-timerシリーズ㉞</p>
+<p>ISSUE 04 · #1303 · 2026-08-17 · korea-first-timerシリーズ㉞</p>
 <hr>
 <h2 id="s1">🎯 この手順書の読み方 — 画面表記のルール</h2>
 <p>この記事は<span class="scr">「eSIMとは何か」</span>ではなく、<strong><span class="scr">「自分のスマホ画面で何を、いつ、どの順番で押すのか」</span></strong>をそのまま書く。eSIM自体の紹介・物理USIMとの料金・購入先比較は#250ですでに扱った — この記事はインストール・アクティベーション手順専用だ。</p>
@@ -108,32 +108,32 @@
 <th>混同しやすい理由</th>
 </tr></thead><tbody>
 <tr>
-<td>モバイル通信 / モバイルデータ通信 (셀룰러 / 모바일 데이터) <button class="sm" type="button" data-ko="모바일 데이터" data-sub="モバイル通信 / モバイルデータ通信 (셀룰러 / 모바일 데이터)" aria-label="Show fullscreen">📢</button></td>
+<td>モバイル通信 / モバイルデータ通信 (셀룰러 / 모바일 데이터) <button class="sm" type="button" data-ko="모바일 데이터" data-sub="モバイル通信 / モバイルデータ通信 (셀룰러 / 모바일 데이터)" aria-label="この韓国語を全画面で表示">📢</button></td>
 <td>データ回線全体を管理するメニュー名</td>
 <td>iPhoneは<span class="scr">「モバイル通信」</span>、Androidは<span class="scr">「モバイルデータ」</span>と呼び名が違うだけ — 同じ場所</td>
 </tr>
 <tr>
-<td>eSIMを追加 (eSIM 추가) <button class="sm" type="button" data-ko="추가" data-sub="eSIMを追加 (eSIM 추가)" aria-label="Show fullscreen">📢</button></td>
+<td>eSIMを追加 (eSIM 추가) <button class="sm" type="button" data-ko="추가" data-sub="eSIMを追加 (eSIM 추가)" aria-label="この韓国語を全画面で表示">📢</button></td>
 <td>新しいQRを取り込む<strong>インストール</strong>ボタン</td>
 <td>すでにインストール済みのeSIMを再度ここで押してはいけない — ④は別メニュー</td>
 </tr>
 <tr>
-<td>データローミング (데이터 로밍) <button class="sm" type="button" data-ko="데이터 로밍" data-sub="データローミング (데이터 로밍)" aria-label="Show fullscreen">📢</button></td>
+<td>データローミング (데이터 로밍) <button class="sm" type="button" data-ko="데이터 로밍" data-sub="データローミング (데이터 로밍)" aria-label="この韓国語を全画面で表示">📢</button></td>
 <td>海外でデータを使えるようにするスイッチ</td>
 <td><strong>モバイルデータONとは別物</strong> — 両方オンにしないとつながらない</td>
 </tr>
 <tr>
-<td>既定回線 (기본 회선) <button class="sm" type="button" data-ko="기본 회선" data-sub="既定回線 (기본 회선)" aria-label="Show fullscreen">📢</button></td>
+<td>既定回線 (기본 회선) <button class="sm" type="button" data-ko="기본 회선" data-sub="既定回線 (기본 회선)" aria-label="この韓国語を全画面で表示">📢</button></td>
 <td>2つのSIMのうち実際にデータを使う回線の指定</td>
 <td>ホームSIMが既定のままだとeSIMを入れても使われない</td>
 </tr>
 <tr>
 <td>APN</td>
-<td>キャリア接続設定値 (통신사 접속 설정값) <button class="sm" type="button" data-ko="통신사 접속 설정값" data-sub="キャリア接続設定値 (통신사 접속 설정값)" aria-label="Show fullscreen">📢</button></td>
+<td>キャリア接続設定値 (통신사 접속 설정값) <button class="sm" type="button" data-ko="통신사 접속 설정값" data-sub="キャリア接続設定値 (통신사 접속 설정값)" aria-label="この韓国語を全画面で表示">📢</button></td>
 <td>自動設定が失敗したときだけ手動入力(⑥)</td>
 </tr>
 <tr>
-<td>SIM管理 (SIM 관리자, Android) <button class="sm" type="button" data-ko="관리자" data-sub="SIM管理 (SIM 관리자, Android)" aria-label="Show fullscreen">📢</button></td>
+<td>SIM管理 (SIM 관리자, Android) <button class="sm" type="button" data-ko="관리자" data-sub="SIM管理 (SIM 관리자, Android)" aria-label="この韓国語を全画面で表示">📢</button></td>
 <td>eSIM・物理USIMをまとめて管理する画面</td>
 <td>iPhoneの<span class="scr">「eSIMを追加」</span>に相当するAndroidの呼び名</td>
 </tr>
@@ -162,15 +162,15 @@
 <h2 id="s10">⑨ プランB — eSIMがどうしてもダメな時</h2>
 <ul>
 <li><strong>空港のキャリアブースで物理USIMを受け取る</strong> — 入国審査通過後に通信3社(SKT・KT・LG U+)のブースがある。パスポート提示後すぐに開通するUSIMをその場で買える。</li>
-<li><strong>公共Wi-Fiでまず急場をしのぐ</strong> — 空港・地下鉄・主要観光地の公共Wi-Fi実用法は<strong><a href="../public-wifi-guide.html">#1302</a></strong>で扱う。eSIM問題を解決するまでの一時しのぎとして便利だ。</li>
-<li><strong>出国前の準備を一度に終わらせたいなら</strong> — eSIMインストールを含む到着前の準備物セットは<strong><a href="../e-arrival-card-guide.html">#1289</a> e-Arrival手続きガイド</strong>とセットで整理しておくと、空港で開く画面が減る。</li>
+<li><strong>公共Wi-Fiでまず急場をしのぐ</strong> — 空港・地下鉄・主要観光地の公共Wi-Fi実用法は<strong>#1302</strong>で扱う。eSIM問題を解決するまでの一時しのぎとして便利だ。</li>
+<li><strong>出国前の準備を一度に終わらせたいなら</strong> — eSIMインストールを含む到着前の準備物セットは<strong>#1289 e-Arrival手続きガイド</strong>とセットで整理しておくと、空港で開く画面が減る。</li>
 </ul>
 <hr>
 <h2 id="s11">🔗 Related</h2>
 <ul>
 <li><strong>eSIM vs 物理USIM比較・購入先</strong>: <strong><a href="https://mgself414.github.io/keychingu-content-deploy/content/foreigner-sim.ja.html">#250</a> SIM・eSIM・WiFiフルガイド</strong> — この記事はそのうちeSIMインストール・アクティベーション手順だけを深掘り</li>
-<li><strong>到着前準備セット</strong>: <a href="../e-arrival-card-guide.html">#1289</a> e-Arrival手続きガイド・<a href="https://mgself414.github.io/keychingu-content-deploy/content/arrival-essentials.ja.html">#398</a> 到着必須(通信・決済・交通)</li>
-<li><strong>同シリーズ</strong>:<a href="../public-wifi-guide.html">#1302</a> 公共Wi-Fi実用ガイド</li>
+<li><strong>到着前準備セット</strong>: #1289 e-Arrival手続きガイド・<a href="https://mgself414.github.io/keychingu-content-deploy/content/arrival-essentials.ja.html">#398</a> 到着必須(通信・決済・交通)</li>
+<li><strong>同シリーズ</strong>:#1302 公共Wi-Fi実用ガイド</li>
 <li><strong>必須アプリ</strong>: <a href="https://mgself414.github.io/keychingu-content-deploy/content/korea-essential-apps.ja.html">#1230</a> 必須アプリ12 — eSIM購入サイトのアプリもここでまとめて整理</li>
 </ul>
 <hr>

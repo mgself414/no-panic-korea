@@ -112,11 +112,32 @@ kbd {
 }
 
 /* Show-Me mode (P2) */
+/* min-width/height 는 WCAG 2.5.8(24×24 CSS px) 충족용. 이전 실측 약 23×18px 로
+   미달이었다 — 이 버튼이 이 사이트의 핵심 동작(직원에게 한글 화면 보여주기)이라
+   현장에서 눌리는 게 우선이다. inline-flex 는 글리프를 박스 중앙에 두기 위한 것. */
 button.sm {
   background: none; border: none; cursor: pointer; font-size: 15px;
   padding: 0 4px; vertical-align: middle; opacity: .75;
+  min-width: 32px; min-height: 32px;
+  display: inline-flex; align-items: center; justify-content: center;
 }
 button.sm:hover { opacity: 1; transform: scale(1.15); }
+
+/* 키보드 포커스 — 이전에는 :focus 규칙이 CSS 전체에 0건이었다. */
+:focus-visible {
+  outline: 3px solid #0E7C6B;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 dialog#showme {
   border: none; border-radius: 0; width: 100vw; height: 100vh;
   max-width: 100vw; max-height: 100vh; background: #fff; color: #000;

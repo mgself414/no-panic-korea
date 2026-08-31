@@ -26,10 +26,10 @@
 </header>
 <main class="manual" style="--cat:var(--cat-move)"><a class="back" href="../ko/index.html">← 전체 상황</a><div class="cat-chip">🚲</div><h1>한국 따릉이 공공자전거, 당황 제로 절차판 — 화면 그대로 따라하기</h1>
 <blockquote><p><strong>부제</strong>: 서울 공공자전거 따릉이 완전정복 — 앱 셋업 → 대여 → 반납 실전 절차 · QR 스캔 실패 3원인 · &quot;반납했는데 과금 계속&quot; 진짜 함정 · 한강 라이딩 연계 동선</p></blockquote><nav class="toc"><b>목차</b><ol><li><a href="#s1">🎯 이 절차판을 읽는 법 — 화면 표기 규약</a></li><li><a href="#s2">① 따릉이가 뭔가 — 서울 어디서든 빌리고, 아무 대여소나 반납</a></li><li><a href="#s3">② 앱 셋업 — 설치부터 이용권 구매까지</a></li><li><a href="#s4">③ 대여 마스터 플로우 — 자전거 앞에서 이 순서</a></li><li><a href="#s5">④ 반납 마스터 플로우 — 진짜 함정은 여기</a></li><li><a href="#s6">⑤ QR 스캔이 안 될 때 — 원인은 딱 3가지</a></li><li><a href="#s7">⑥ 생존 단어 10 — 대여소·거치대에서 보이는 한국어</a></li><li><a href="#s8">⑦ 자전거도로 기본 룰 + 한강 라이딩 연계</a></li><li><a href="#s9">⑧ 당황 시나리오 3</a></li><li><a href="#s10">⑨ 플랜B — 그래도 안 되면</a></li></ol></nav>
-<p>ISSUE 04 · <a href="../ddareungi-guide.html">#1294</a> · 2026-08-16 · korea-first-timer 시리즈 ㉕</p>
+<p>ISSUE 04 · #1294 · 2026-08-16 · korea-first-timer 시리즈 ㉕</p>
 <hr>
 <h2 id="s1">🎯 이 절차판을 읽는 법 — 화면 표기 규약</h2>
-<p><code><a href="../restaurant-kiosk-guide.html">#1270</a> 키오스크 편</code>과 같은 표기를 쓴다. &quot;무엇을 하라&quot;가 아니라 <strong>&quot;화면에 무엇이 보이고, 어느 버튼을, 어떤 순서로 누르는지&quot;</strong>를 그대로 적는다.</p>
+<p><code>#1270 키오스크 편</code>과 같은 표기를 쓴다. &quot;무엇을 하라&quot;가 아니라 <strong>&quot;화면에 무엇이 보이고, 어느 버튼을, 어떤 순서로 누르는지&quot;</strong>를 그대로 적는다.</p>
 <ul>
 <li>화면 속 버튼은 대괄호로: <kbd>Rent</kbd></li>
 <li>화면 제목·안내 문구는 낫표로: <span class="scr">「반납 완료」</span></li>
@@ -150,52 +150,52 @@
 <th>뜻</th>
 </tr></thead><tbody>
 <tr>
-<td>대여소 <button class="sm" type="button" data-ko="대여소" data-sub="대여소" aria-label="Show fullscreen">📢</button></td>
+<td>대여소 <button class="sm" type="button" data-ko="대여소" data-sub="대여소" aria-label="이 한국어 문구 전체화면으로 보기">📢</button></td>
 <td>daeyeoso</td>
 <td>Rental station</td>
 </tr>
 <tr>
-<td>거치대 <button class="sm" type="button" data-ko="거치대" data-sub="거치대" aria-label="Show fullscreen">📢</button></td>
+<td>거치대 <button class="sm" type="button" data-ko="거치대" data-sub="거치대" aria-label="이 한국어 문구 전체화면으로 보기">📢</button></td>
 <td>georichidae</td>
 <td>Docking rack</td>
 </tr>
 <tr>
-<td>이용권 <button class="sm" type="button" data-ko="이용권" data-sub="이용권" aria-label="Show fullscreen">📢</button></td>
+<td>이용권 <button class="sm" type="button" data-ko="이용권" data-sub="이용권" aria-label="이 한국어 문구 전체화면으로 보기">📢</button></td>
 <td>iyongkwon</td>
 <td>Pass/ticket</td>
 </tr>
 <tr>
-<td>대여 <button class="sm" type="button" data-ko="대여" data-sub="대여" aria-label="Show fullscreen">📢</button></td>
+<td>대여 <button class="sm" type="button" data-ko="대여" data-sub="대여" aria-label="이 한국어 문구 전체화면으로 보기">📢</button></td>
 <td>daeyeo</td>
 <td>Rent</td>
 </tr>
 <tr>
-<td>반납 <button class="sm" type="button" data-ko="반납" data-sub="반납" aria-label="Show fullscreen">📢</button></td>
+<td>반납 <button class="sm" type="button" data-ko="반납" data-sub="반납" aria-label="이 한국어 문구 전체화면으로 보기">📢</button></td>
 <td>bannap</td>
 <td>Return</td>
 </tr>
 <tr>
-<td>잠금 <button class="sm" type="button" data-ko="잠금" data-sub="잠금" aria-label="Show fullscreen">📢</button></td>
+<td>잠금 <button class="sm" type="button" data-ko="잠금" data-sub="잠금" aria-label="이 한국어 문구 전체화면으로 보기">📢</button></td>
 <td>jamgeum</td>
 <td>Lock</td>
 </tr>
 <tr>
-<td>해제 <button class="sm" type="button" data-ko="해제" data-sub="해제" aria-label="Show fullscreen">📢</button></td>
+<td>해제 <button class="sm" type="button" data-ko="해제" data-sub="해제" aria-label="이 한국어 문구 전체화면으로 보기">📢</button></td>
 <td>haeje</td>
 <td>Unlock</td>
 </tr>
 <tr>
-<td>정기권 <button class="sm" type="button" data-ko="정기권" data-sub="정기권" aria-label="Show fullscreen">📢</button></td>
+<td>정기권 <button class="sm" type="button" data-ko="정기권" data-sub="정기권" aria-label="이 한국어 문구 전체화면으로 보기">📢</button></td>
 <td>jeonggikwon</td>
 <td>Season pass</td>
 </tr>
 <tr>
-<td>자전거도로 <button class="sm" type="button" data-ko="자전거도로" data-sub="자전거도로" aria-label="Show fullscreen">📢</button></td>
+<td>자전거도로 <button class="sm" type="button" data-ko="자전거도로" data-sub="자전거도로" aria-label="이 한국어 문구 전체화면으로 보기">📢</button></td>
 <td>jajeongeo-doro</td>
 <td>Bike lane</td>
 </tr>
 <tr>
-<td>만차 <button class="sm" type="button" data-ko="만차" data-sub="만차" aria-label="Show fullscreen">📢</button></td>
+<td>만차 <button class="sm" type="button" data-ko="만차" data-sub="만차" aria-label="이 한국어 문구 전체화면으로 보기">📢</button></td>
 <td>mancha</td>
 <td>Full/no space (거치대 만차 표시)</td>
 </tr>
@@ -219,7 +219,7 @@
 <hr>
 <h2 id="s11">🔗 Related</h2>
 <ul>
-<li><strong>korea-first-timer 시리즈</strong>: <a href="../city-bus-guide.html">#1271</a> 시내버스 타는 법 · <a href="../subway-first-ride-guide.html">#1281</a> 지하철 이용 절차</li>
+<li><strong>korea-first-timer 시리즈</strong>: #1271 시내버스 타는 법 · #1281 지하철 이용 절차</li>
 <li><strong>도착 직후 세트</strong>: <a href="https://mgself414.github.io/keychingu-content-deploy/content/korea-essential-apps.html">#1230</a> 필수 앱 12 — 따릉이 앱 설치도 이 목록에 포함</li>
 <li><strong>같은 도시 이동 계열</strong>: (예정) 카카오T 택시 · 배달앱 실사용</li>
 </ul>

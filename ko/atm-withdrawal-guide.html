@@ -26,10 +26,10 @@
 </header>
 <main class="manual" style="--cat:var(--cat-pay)"><a class="back" href="../ko/index.html">← 전체 상황</a><div class="cat-chip">🏧</div><h1>한국 ATM 현금 인출, 당황 제로 매뉴얼 — 화면 그대로 따라하기</h1>
 <blockquote><p><strong>부제</strong>: 해외카드로 한국 ATM에서 현금 뽑기 완전정복 — Global ATM 판별법 · 편의점·은행 위치별 수수료 · 인출 마스터 플로우 · DCC 최대 함정(&quot;자국통화로 낼까요?&quot; 화면) · 수수료 2중 구조 · 생존 단어 10 · 카드 거절·먹힘 대응</p></blockquote><nav class="toc"><b>목차</b><ol><li><a href="#s1">🎯 이 매뉴얼을 읽는 법 — 화면 표기 규약</a></li><li><a href="#s2">① Global ATM 판별법 — 아무 ATM이나 되는 게 아니다</a></li><li><a href="#s3">② 어디에 있나 — 편의점 vs 은행</a></li><li><a href="#s4">③ 인출 마스터 플로우 — 화면 그대로 7단계</a></li><li><a href="#s5">④ DCC 최대 함정 — &quot;자국통화로 낼까요?&quot; 화면, 무조건 KRW</a></li><li><a href="#s6">⑤ 수수료 2중 구조 — 화면에 뜨는 것과 안 뜨는 것</a></li><li><a href="#s7">⑥ 생존 단어 10 — 화면에서 실제로 보이는 글자</a></li><li><a href="#s8">⑦ 당황 시나리오 3</a></li><li><a href="#s9">⑧ 플랜B — ATM이 정 안 되면</a></li></ol></nav>
-<p>ISSUE 04 · <a href="../atm-withdrawal-guide.html">#1286</a> · 2026-08-16 · korea-first-timer 시리즈 ⑰</p>
+<p>ISSUE 04 · #1286 · 2026-08-16 · korea-first-timer 시리즈 ⑰</p>
 <hr>
 <h2 id="s1">🎯 이 매뉴얼을 읽는 법 — 화면 표기 규약</h2>
-<p>화면 표기 규약(대괄호 버튼·낫표 화면·굵게 동작)은 <a href="../restaurant-kiosk-guide.html">#1270</a> 키오스크 편이 SoT다. 이 글도 그대로 따른다.</p>
+<p>화면 표기 규약(대괄호 버튼·낫표 화면·굵게 동작)은 #1270 키오스크 편이 SoT다. 이 글도 그대로 따른다.</p>
 <ul>
 <li>화면 속 버튼은 대괄호로: <kbd>KRW</kbd></li>
 <li>화면 제목·안내 문구는 낫표로: <span class="scr">「Select Amount」</span></li>
@@ -161,52 +161,52 @@
 <th>뜻</th>
 </tr></thead><tbody>
 <tr>
-<td>Withdrawal / 출금 <button class="sm" type="button" data-ko="출금" data-sub="Withdrawal / 출금" aria-label="Show fullscreen">📢</button></td>
+<td>Withdrawal / 출금 <button class="sm" type="button" data-ko="출금" data-sub="Withdrawal / 출금" aria-label="이 한국어 문구 전체화면으로 보기">📢</button></td>
 <td>chulgeum</td>
 <td>인출 — 이 버튼 누르면 시작</td>
 </tr>
 <tr>
-<td>Balance Inquiry / 잔액조회 <button class="sm" type="button" data-ko="잔액조회" data-sub="Balance Inquiry / 잔액조회" aria-label="Show fullscreen">📢</button></td>
+<td>Balance Inquiry / 잔액조회 <button class="sm" type="button" data-ko="잔액조회" data-sub="Balance Inquiry / 잔액조회" aria-label="이 한국어 문구 전체화면으로 보기">📢</button></td>
 <td>jan-aek johoe</td>
 <td>잔액 확인 (인출과 헷갈리지 않게)</td>
 </tr>
 <tr>
-<td>Fee / 수수료 <button class="sm" type="button" data-ko="수수료" data-sub="Fee / 수수료" aria-label="Show fullscreen">📢</button></td>
+<td>Fee / 수수료 <button class="sm" type="button" data-ko="수수료" data-sub="Fee / 수수료" aria-label="이 한국어 문구 전체화면으로 보기">📢</button></td>
 <td>susu-ryo</td>
 <td>Fee — 6단계 확인 화면 핵심 단어</td>
 </tr>
 <tr>
-<td>Confirm / 확인 <button class="sm" type="button" data-ko="확인" data-sub="Confirm / 확인" aria-label="Show fullscreen">📢</button></td>
+<td>Confirm / 확인 <button class="sm" type="button" data-ko="확인" data-sub="Confirm / 확인" aria-label="이 한국어 문구 전체화면으로 보기">📢</button></td>
 <td>hwagin</td>
 <td><strong>Confirm — 다음으로 진행</strong></td>
 </tr>
 <tr>
-<td>Cancel / 취소 <button class="sm" type="button" data-ko="취소" data-sub="Cancel / 취소" aria-label="Show fullscreen">📢</button></td>
+<td>Cancel / 취소 <button class="sm" type="button" data-ko="취소" data-sub="Cancel / 취소" aria-label="이 한국어 문구 전체화면으로 보기">📢</button></td>
 <td>chwiso</td>
 <td><strong>Cancel — 잘못 눌렀을 때 전체 취소</strong></td>
 </tr>
 <tr>
-<td>PIN / 비밀번호 <button class="sm" type="button" data-ko="비밀번호" data-sub="PIN / 비밀번호" aria-label="Show fullscreen">📢</button></td>
+<td>PIN / 비밀번호 <button class="sm" type="button" data-ko="비밀번호" data-sub="PIN / 비밀번호" aria-label="이 한국어 문구 전체화면으로 보기">📢</button></td>
 <td>bimil beonho</td>
 <td>카드 비밀번호 4자리</td>
 </tr>
 <tr>
-<td>Enter Amount / 금액입력 <button class="sm" type="button" data-ko="금액입력" data-sub="Enter Amount / 금액입력" aria-label="Show fullscreen">📢</button></td>
+<td>Enter Amount / 금액입력 <button class="sm" type="button" data-ko="금액입력" data-sub="Enter Amount / 금액입력" aria-label="이 한국어 문구 전체화면으로 보기">📢</button></td>
 <td>geumaek ipryeok</td>
 <td>인출할 금액 직접 입력</td>
 </tr>
 <tr>
-<td>Receipt / 명세표 <button class="sm" type="button" data-ko="명세표" data-sub="Receipt / 명세표" aria-label="Show fullscreen">📢</button></td>
+<td>Receipt / 명세표 <button class="sm" type="button" data-ko="명세표" data-sub="Receipt / 명세표" aria-label="이 한국어 문구 전체화면으로 보기">📢</button></td>
 <td>myeongsepyo</td>
 <td>영수증 — 수수료·환율 기록됨</td>
 </tr>
 <tr>
-<td>Take Card / 카드받기 <button class="sm" type="button" data-ko="카드받기" data-sub="Take Card / 카드받기" aria-label="Show fullscreen">📢</button></td>
+<td>Take Card / 카드받기 <button class="sm" type="button" data-ko="카드받기" data-sub="Take Card / 카드받기" aria-label="이 한국어 문구 전체화면으로 보기">📢</button></td>
 <td>kadeu batgi</td>
 <td><strong>카드 회수 — 절대 놓치지 말 것</strong></td>
 </tr>
 <tr>
-<td>Transaction Cancelled / 거래중단 <button class="sm" type="button" data-ko="거래중단" data-sub="Transaction Cancelled / 거래중단" aria-label="Show fullscreen">📢</button></td>
+<td>Transaction Cancelled / 거래중단 <button class="sm" type="button" data-ko="거래중단" data-sub="Transaction Cancelled / 거래중단" aria-label="이 한국어 문구 전체화면으로 보기">📢</button></td>
 <td>georae jungdan</td>
 <td>거래가 중단됐다는 뜻 — 다시 시도</td>
 </tr>
@@ -228,8 +228,8 @@
 <ul>
 <li><strong>결제수단 전체 그림</strong>: <a href="https://mgself414.github.io/keychingu-content-deploy/content/exchange-card-atm.html">#435</a> 한국 환전·카드·ATM 개요 — DCC·WOWPASS 상세 비교는 여기서</li>
 <li><strong>결제 심층</strong>: <a href="https://mgself414.github.io/keychingu-content-deploy/content/payment-system-deep.html">#527</a> 한국 결제 시스템 deep dive — 카드가 거절되는 VAN/EMV 구조</li>
-<li><strong>같은 시리즈</strong>: <a href="../tipping-paying-guide.html">#1275</a> 한국 팁·계산 매너 가이드 — ATM에서 뽑은 현금을 쓰는 다음 단계</li>
-<li><strong>korea-first-timer 시리즈</strong>: <a href="../restaurant-kiosk-guide.html">#1270</a> 키오스크 주문 가이드 (화면 표기 규약 SoT)</li>
+<li><strong>같은 시리즈</strong>: #1275 한국 팁·계산 매너 가이드 — ATM에서 뽑은 현금을 쓰는 다음 단계</li>
+<li><strong>korea-first-timer 시리즈</strong>: #1270 키오스크 주문 가이드 (화면 표기 규약 SoT)</li>
 </ul>
 <hr></main>
 <dialog id="showme"><div class="sm-ko"></div><div class="sm-sub"></div></dialog>

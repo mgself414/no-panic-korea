@@ -120,6 +120,41 @@ kbd {
 .toc a { color: var(--ink); text-decoration: none; }
 .toc a:hover { color: var(--brand); }
 
+/* 정보 태그 (2026-09-18) — 매뉴얼 상단, 제목 아래·목차 위.
+   auto-fit 이라 390px 에서 자동 2열이 된다. 값은 확인된 필드만 렌더되므로
+   칸 수가 편마다 다를 수 있다. */
+.infobox {
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 12px 18px; margin: 18px 0 8px;
+  /* 130px — 390px 화면에서 2열이 되는 하한(150px 이면 1열로 떨어져 블록이 6행으로 길어진다) */
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px 18px;
+}
+.infobox dt { font-size: 11px; text-transform: uppercase; letter-spacing: .6px; color: var(--soft); }
+.infobox dd { margin: 2px 0 0; font-size: 13.5px; font-weight: 600; color: var(--ink); }
+
+/* 증상별 빠른 진입 — <details> 기본 동작만 쓴다(JS 0) */
+.sx { margin: 26px 0 8px; }
+.sx h2 { font-size: 17px; margin: 0 0 10px; }
+.sx-item { border: 1px solid var(--line); border-radius: 10px; background: var(--card); margin-bottom: 8px; }
+.sx-item summary {
+  cursor: pointer; padding: 12px 16px; font-weight: 600; font-size: 14.5px;
+  list-style: none; display: flex; align-items: center; gap: 8px;
+}
+.sx-item summary::-webkit-details-marker { display: none; }
+.sx-item summary::after { content: "▸"; margin-left: auto; color: var(--soft); transition: transform .15s; }
+.sx-item[open] summary::after { transform: rotate(90deg); }
+.sx-item[open] summary { border-bottom: 1px solid var(--line); }
+.sx-item .sit-grid { padding: 12px 16px 16px; }
+
+/* 보여주기 다이얼로그의 복사 버튼 */
+.sm-copy {
+  margin-top: 22px; padding: 10px 22px; font-size: 15px; font-weight: 600;
+  border: 2px solid var(--brand); border-radius: 999px;
+  background: var(--brand); color: #fff; cursor: pointer;
+  min-height: 44px;
+}
+.sm-copy:hover { opacity: .88; }
+
 @media (max-width: 560px) {
   .sit-grid { grid-template-columns: 1fr; }
   .manual table { font-size: 13px; }

@@ -80,6 +80,9 @@ body {
 }
 .manual a { color: var(--brand); }
 .manual code { background: var(--code-bg); padding: 1px 6px; border-radius: 5px; font-size: .92em; }
+/* 코드 펜스(의사화면) — 2026-11-10 L3 수리 B: 공용 md_to_html 이 ``` 를 <pre class="code-block"> 로 렌더 */
+.manual pre.code-block { background: var(--code-bg); padding: 12px 14px; border-radius: 8px; margin: 12px 0; overflow-x: auto; font-size: .9em; line-height: 1.5; white-space: pre; }
+.manual pre.code-block code { background: none; padding: 0; }
 .manual hr { border: none; border-top: 1px solid var(--line); margin: 28px 0; }
 
 /* 의사화면 표기: 버튼 칩·화면 라벨 */

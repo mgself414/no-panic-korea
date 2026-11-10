@@ -46,7 +46,7 @@
 <p>ISSUE 04 · <a href="jjimjilbang-wristband-guide.html">#1284</a> · 2026-08-16 · korea-first-timer系列⑮</p>
 <hr>
 <h2 id="s1">🎯 本手册阅读方法 — 画面标记规则</h2>
-<p>画面标记规则(方括号按钮·「」画面·加粗动作)以<a href="restaurant-kiosk-guide.html">#1270</a>自助点餐机篇为SoT。本文照样沿用。</p>
+<p>画面标记规则(方括号按钮·「」画面·加粗动作)以<a href="restaurant-kiosk-guide.html">#1270</a>自助点餐机篇为基准篇。本文照样沿用。</p>
 <ul>
 <li>画面上的按钮用方括号标注：<kbd>结账 (결제하기)</kbd></li>
 <li>画面标题·提示文字用「」标注：<span class="scr">「结算明细 (정산 내역)」</span></li>
@@ -116,13 +116,11 @@
 </tr>
 </tbody></table></div>
 <p>伪画面(感应式读卡器)：</p>
-<p>```</p>
-<p><span class="scr">「感应手环 (손목밴드 태그)」</span></p>
-<p>─────────────</p>
-<p>正在确认编号...</p>
-<p>No. 0247 识别成功</p>
-<p>充值₩3,000 完成</p>
-<p>```</p>
+<pre class="code-block"><code><span class="scr">「感应手环 (손목밴드 태그)」</span>
+─────────────
+正在确认编号...
+No. 0247 识别成功
+充值₩3,000 完成</code></pre>
 <ul>
 <li>不用掏钱包也不用掏卡 — 这就是这套系统的核心。</li>
 <li>感应不上时店员会手动输入编号，不用慌，把手环给对方看就行。</li>
@@ -156,15 +154,14 @@
 </tr>
 </tbody></table></div>
 <p>无人结算机伪画面：</p>
-<p>```</p>
-<p><span class="scr">「结算明细 (정산 내역)」</span></p>
-<p>入场费          ₩12,000</p>
-<p>小卖部 - 甜米露      ₩3,000</p>
-<p>小卖部 - 鸡蛋      ₩2,000</p>
-<p>──────────────────</p>
-<p>合计            ₩17,000</p>
-<p>[ 刷卡结账 ]   [ 现金结账 ]</p>
-<p>```</p>
+<pre class="code-block"><code><span class="scr">「结算明细 (정산 내역)」</span>
+入场费          ₩12,000
+小卖部 - 甜米露      ₩3,000
+小卖部 - 鸡蛋      ₩2,000
+──────────────────
+合计            ₩17,000
+
+[ 刷卡结账 ]   [ 现金结账 ]</code></pre>
 <ul>
 <li>没有结算机的门店，全部由前台职员看手环口头报金额。</li>
 <li><strong>入场时付的钱已经付过了</strong>，结算画面上只会加上&quot;里面额外消费的部分&quot;，记住这一点，金额就不会看起来突然变大。</li>
@@ -270,9 +267,11 @@
 <blockquote><p>小贴士：12个不用全背。<strong><code>结算 (jeongsan 정산)</code>(离场算账)·<code>小卖部 (maejeom 매점)</code>(消费场所)·<code>汗蒸服 (jjimjilbok 찜질복)</code>(公共区域服装)</strong>这三个词知道，实战中就不会慌。</p></blockquote>
 <hr>
 <h2 id="s8">⑦ 慌张场景3种</h2>
-<p>1. <strong>手环丢了</strong> — 别慌，直接去前台申报。大多数门店都有遗失赔偿规定(定额赔偿或补办费)，照职员指引处理就行。</p>
-<p>2. <strong>衣柜打不开</strong> — 十有八九是手环感应方向问题。重新确认读卡器位置，<strong>把手环翻个面</strong>再试一次。还是不行就叫附近的职员。</p>
-<p>3. <strong>结算金额比想的多</strong> — 别慌，可以要求<span class="scr">「查看明细 (내역 확인)」</span>。每一项都会列出来，当场就能确认自己什么时候感应了什么。</p>
+<ol>
+<li><strong>手环丢了</strong> — 别慌，直接去前台申报。大多数门店都有遗失赔偿规定(定额赔偿或补办费)，照职员指引处理就行。</li>
+<li><strong>衣柜打不开</strong> — 十有八九是手环感应方向问题。重新确认读卡器位置，<strong>把手环翻个面</strong>再试一次。还是不行就叫附近的职员。</li>
+<li><strong>结算金额比想的多</strong> — 别慌，可以要求<span class="scr">「查看明细 (내역 확인)」</span>。每一项都会列出来，当场就能确认自己什么时候感应了什么。</li>
+</ol>
 <hr>
 <h2 id="s9">⑧ 备用方案 — 语言不通时</h2>
 <p>在结算画面前卡住的话，说一句<strong><span class="scr">「请帮我结算 (jeongsanhae juseyo 정산해 주세요)」</span></strong>，同时把手环递过去就行。大部分职员都会主动帮你看画面、办结账。</p>
@@ -282,7 +281,7 @@
 <li><strong>同一空间使用法</strong>：<a href="https://mgself414.github.io/keychingu-content-deploy/content/jjimjilbang.zh.html">#007</a>汗蒸幕使用指南 — 区域构成·整体顺序</li>
 <li><strong>更衣室·浴池礼仪</strong>：#34汗蒸幕礼仪 — 本文未涉及的裸浴区域规则见这里</li>
 <li><strong>同系列</strong>：<a href="tipping-paying-guide.html">#1275</a>韩国结账礼仪指南 — 汗蒸幕之外的一般结账文化</li>
-<li><strong>korea-first-timer系列</strong>：<a href="restaurant-kiosk-guide.html">#1270</a>自助点餐机指南(画面标记规则SoT)</li>
+<li><strong>korea-first-timer系列</strong>：<a href="restaurant-kiosk-guide.html">#1270</a>自助点餐机指南(画面标记规则的基准篇)</li>
 </ul>
 <hr>
 <h2 id="s11">🌐 外部信息来源</h2>

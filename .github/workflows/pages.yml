@@ -1,4 +1,6 @@
 name: Deploy to GitHub Pages
+# 2026-11-22: 업로드 직후 같은 job에서 배포하면 "No artifacts named github-pages"(artifact 조회 지연)로
+# 실패 → upload/deploy job 분리 + 배포 실패 시 60초 뒤 같은 job에서 1회 재시도 (kc 워크플로와 동일).
 on:
   push:
     branches: ["main"]
@@ -11,10 +13,7 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  upload:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,6 +21,21 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
+  deploy:
+    needs: upload
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+      - name: Wait before retry
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 60
+      - name: Deploy to GitHub Pages (retry)
+        id: deployment_retry
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v4
